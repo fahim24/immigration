@@ -1,0 +1,209 @@
+.hero-section {
+	border-top: 1px solid $primary-8;
+	@include container;
+	height: fit-content;
+	&-content {
+		position: relative;
+		width: 50%;
+		padding: 100px 30px 100px 0;
+		&-btn {
+			@include btn-primary;
+			padding: 15px 30px;
+			@include flex(row, center, center, 10px);
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
+	&-img {
+		position: absolute;
+		left: 50%;
+		right: 0;
+		height: 715px;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.tags {
+	@include flex(row, start, center, 24px);
+	span {
+		@include flex(row, center, center, 10px);
+	}
+}
+
+.service-section {
+	background-color: $primary;
+	&-container {
+		@include container;
+		padding: 80px 0;
+	}
+	.services {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2px;
+		.service {
+			background-color: rgba(255, 255, 255, 0.06);
+			padding: 45px;
+			&-img {
+				display: none;
+				height: 100%;
+				width: 40%;
+			}
+			&-card {
+				@include flex(column, flex-start, flex-start, 15px);
+				color: white;
+				&-btn {
+					@include btn-basic;
+					@include flex(row, flex-start, center, 10px);
+				}
+			}
+			&:hover {
+				padding: 0;
+				background-color: white;
+				@include flex(row, flex-start, center, 0px);
+				.service-img {
+					display: block;
+				}
+				.service-card {
+					padding: 20px;
+					color: $primary;
+					p {
+						color: $primary;
+					}
+
+					&-btn {
+						color: $secondary;
+					}
+				}
+			}
+		}
+	}
+}
+
+.about-section {
+	margin: 100px auto;
+	&-container {
+		@include container;
+		display: grid;
+		grid-template-columns: auto 600px;
+		gap: 150px;
+		height: fit-content;
+		.about-section-content {
+			margin: auto auto;
+			&-btn {
+				@include btn-primary;
+				padding: 15px 30px;
+				@include flex(row, center, center, 10px);
+				&:hover {
+					opacity: 0.9;
+				}
+			}
+		}
+		.about-section-img {
+			position: relative;
+			height: 600px;
+			&-bg {
+				background-color: $primary;
+				position: absolute;
+
+				bottom: 0;
+				right: 0;
+				width: 500px;
+				height: 500px;
+			}
+			&-top {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 500px;
+				height: 500px;
+			}
+		}
+	}
+	&-stats {
+		margin: 100px;
+		background-color: $primary-8;
+		padding: 80px 0;
+		.stats {
+			margin-top: 30px;
+			@include flex(row, center, center, 100px);
+		}
+	}
+}
+
+.process-section {
+	background-color: $primary;
+	margin: 100px auto;
+	padding: 80px 0;
+	&-content {
+		@include container;
+		&-header {
+			display: grid;
+			grid-template-columns: 500px auto;
+			gap: 50px;
+			margin-bottom: 40px;
+		}
+		&-content {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 2px;
+			&-card {
+				@include flex(column, center, flex-start, 15px);
+				background-color: rgba(255, 255, 255, 0.06);
+				padding: 45px;
+				color: white;
+				.card-no {
+					width: 50px;
+					height: 50px;
+					background-color: rgba(255, 255, 255, 0.16);
+					@include flex(row, center, center, 0px);
+					color: inherit;
+					font-weight: 600;
+				}
+				&-btn {
+					@include btn-basic;
+					@include flex(row, flex-start, center, 10px);
+				}
+			}
+		}
+	}
+}
+.testimonials {
+	margin: 100px;
+	background-color: $primary-8;
+	padding: 80px 0;
+	&-container {
+		@include container;
+		&-header {
+			display: grid;
+			grid-template-columns: 1fr 1fr auto;
+			gap: 50px;
+			margin-bottom: 40px;
+			&-btn {
+				@include btn-primary;
+				padding: 15px 30px;
+				@include flex(row, center, center, 10px);
+				&:hover {
+					opacity: 0.9;
+				}
+			}
+		}
+		&-content {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 30px;
+			&-card {
+				background-color: white;
+				padding: 30px;
+				&-profile {
+					margin-top: 30px;
+					@include flex(row, space-between, center);
+				}
+			}
+		}
+	}
+}

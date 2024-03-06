@@ -1,0 +1,36 @@
+@mixin container() {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+@mixin flex($dir: row, $justify: center, $align: center, $gap: 0) {
+	display: flex;
+	flex-direction: $dir;
+	justify-content: $justify;
+	align-items: $align;
+	gap: $gap;
+}
+
+@mixin font-styles($color: $primary, $size: 16px, $style: normal, $weight: 400, $height: 24px) {
+	color: $color;
+	font-size: $size;
+	font-style: $style;
+	font-weight: $weight;
+	line-height: $height;
+}
+
+@mixin btn-primary() {
+	background-color: $secondary;
+	padding: 10px 15px;
+	@include font-styles(white, 16px, normal, 600, 24px);
+	border: none;
+	cursor: pointer;
+}
+
+@mixin btn-basic() {
+	background-color: transparent;
+	@include font-styles(white, 14px, normal, 600, normal);
+
+	border: none;
+	cursor: pointer;
+}
