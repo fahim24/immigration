@@ -110,6 +110,79 @@
 	}
 }
 
+.footer-header {
+	@include flex(row, space-between, center, 0);
+	@include container;
+	padding: 30px 0;
+	.social-links {
+		@include flex(row, flex-start, center, 20px);
+		.social-link {
+			height: 50px;
+			width: 50px;
+			@include flex(row, center, center, 0);
+			background-color: $primary-8;
+			text-decoration: none;
+
+			color: $primary;
+			font-weight: bold;
+		}
+	}
+}
+
+.footer-links {
+	@include container;
+	@include flex(row, center, center, 140px);
+	padding: 80px 0;
+	ul {
+		margin-top: 24px;
+		list-style: none;
+		@include flex(column, flex-start, flex-start, 20px);
+		li {
+			text-wrap: nowrap;
+			a {
+				text-decoration: none;
+				color: $light;
+				&:hover {
+					color: $dark;
+				}
+			}
+		}
+	}
+	&-contact {
+		@include flex(row, flex-start, center, 50px);
+		&-card {
+			@include flex(row, flex-start, center, 12px);
+			&-icon {
+				height: 48px;
+				width: 48px;
+				@include flex(row, center, center, 0);
+				background-color: $primary-8;
+				color: $primary;
+				font-weight: bold;
+				border-radius: 30px;
+			}
+		}
+	}
+}
+
+.footer-copyright {
+	@include flex(row, space-between, center, 0);
+	@include container;
+	padding: 20px 0;
+	a {
+		text-decoration: none;
+		margin-left: 25px;
+		&:hover {
+			color: $secondary;
+		}
+	}
+}
+
+.dividerV {
+	border-bottom: 1px solid #e3e6ee;
+	width: 100%;
+}
+
 .h1 {
 	@include font-styles($primary, 64px, normal, 700, 84px);
 }

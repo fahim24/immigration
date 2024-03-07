@@ -246,3 +246,65 @@
 		}
 	}
 }
+
+.contacts {
+	background-color: $primary;
+	&-container {
+		@include container;
+		display: grid;
+		grid-template-columns: auto 700px;
+		gap: 80px;
+		padding: 80px 0;
+		&-content {
+			@include flex(column, center, flex-start, 45px);
+			margin: auto;
+			&-header {
+				@include flex(column, center, flex-start, 8px);
+			}
+			&-cards {
+				@include flex(column, center, flex-start, 30px);
+				width: 100%;
+				&-card {
+					background-color: rgba(255, 255, 255, 0.06);
+					width: 100%;
+					padding: 30px;
+					@include flex(column, center, flex-start, 15px);
+				}
+			}
+		}
+		&-form {
+			background-color: white;
+			padding: 40px 50px;
+			@include flex(column, flex-start, flex-start, 35px);
+			form {
+				@include flex(column, flex-start, flex-start, 20px);
+				width: 100%;
+				input,
+				textarea {
+					padding: 12px 18px;
+					width: 100%;
+					background-color: #f6f6f4;
+					border: none;
+				}
+				.form-check {
+					@include flex(row, flex-start, center, 6px);
+					input {
+						width: fit-content;
+					}
+					label {
+						color: rgba(72, 70, 68, 1);
+					}
+				}
+				.btn {
+					@include btn-primary;
+					width: 100%;
+					padding: 15px 30px;
+					@include flex(row, center, center, 10px);
+					&:hover {
+						opacity: 0.9;
+					}
+				}
+			}
+		}
+	}
+}
