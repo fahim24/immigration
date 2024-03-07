@@ -1,5 +1,4 @@
 .hero-section {
-	border-top: 1px solid $primary-8;
 	@include container;
 	height: fit-content;
 	&-content {
@@ -175,7 +174,7 @@
 .testimonials {
 	margin: 100px;
 	background-color: $primary-8;
-	padding: 80px;
+	padding: 80px 40px;
 	&-container {
 		@include container;
 		&-header {
