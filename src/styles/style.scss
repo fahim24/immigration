@@ -36,13 +36,22 @@
 	padding: 15px 0;
 	.nav-items {
 		@include flex(row, flex-start, center, 10px);
-		list-style: none;
 		.dropdown {
 			position: relative;
-			display: inline-block;
 			color: $primary;
-			padding: 19px 20px;
 			cursor: pointer;
+			&-content {
+				margin-top: 35px;
+			}
+			a {
+				padding: 34px 20px;
+				border-bottom: 4px solid transparent;
+				border-radius: 0 0 2px 2px;
+				&:hover {
+					border-bottom: 4px solid $secondary;
+				}
+			}
+
 			&:hover {
 				color: $secondary;
 				.dropdown-content {
