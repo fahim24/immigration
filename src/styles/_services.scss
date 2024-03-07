@@ -1,0 +1,33 @@
+.services-top {
+	background-color: $primary;
+	&-content {
+		@include container-sm;
+		padding: 100px 0;
+		text-align: center;
+	}
+}
+
+.services {
+	@include container;
+	margin: 100px auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+	&-card {
+		@include flex(column, center, flex-start, 30px);
+		background-color: $primary-8;
+		padding: 30px;
+		img {
+			width: 100%;
+		}
+		&-btn {
+			@include btn-primary;
+			padding: 15px 30px;
+			@include flex(row, center, center, 10px);
+
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
+}
