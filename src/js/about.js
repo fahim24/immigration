@@ -1,15 +1,8 @@
-// Adding ".process-section" section
-fetch("./src/components/process.html")
-	.then((response) => response.text())
-	.then((data) => {
-		document.querySelector("main").insertAdjacentHTML("beforeend", data);
-	});
-
 // Adding ".testimonials" section
 fetch("./src/components/testimonials.html")
 	.then((response) => response.text())
 	.then((data) => {
-		document.querySelector(".process-section").insertAdjacentHTML("afterend", data);
+		document.querySelector("main").insertAdjacentHTML("beforeend", data);
 	});
 
 // Adding ".blogs" section
