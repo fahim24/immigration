@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "home";
+@import "about";
 
 * {
 	margin: 0;
@@ -44,7 +45,7 @@
 				margin-top: 35px;
 			}
 			a {
-				padding: 34px 20px;
+				padding: 33px 20px;
 				border-bottom: 4px solid transparent;
 				border-radius: 0 0 2px 2px;
 				&:hover {
@@ -62,6 +63,8 @@
 			&-content {
 				display: none;
 				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
 				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 				background-color: white;
 				z-index: 2;
@@ -123,18 +126,18 @@
 	@include flex(row, space-between, center, 0);
 	@include container;
 	padding: 30px 0;
-	.social-links {
-		@include flex(row, flex-start, center, 20px);
-		.social-link {
-			height: 50px;
-			width: 50px;
-			@include flex(row, center, center, 0);
-			background-color: $primary-8;
-			text-decoration: none;
+}
+.social-links {
+	@include flex(row, flex-start, center, 20px);
+	.social-link {
+		height: 50px;
+		width: 50px;
+		@include flex(row, center, center, 0);
+		background-color: $primary-8;
+		text-decoration: none;
 
-			color: $primary;
-			font-weight: bold;
-		}
+		color: $primary;
+		font-weight: bold;
 	}
 }
 
@@ -191,7 +194,24 @@
 	border-bottom: 1px solid #e3e6ee;
 	width: 100%;
 }
-
+.partial-bg {
+	background-color: $primary;
+	height: 600px;
+	width: 100%;
+	z-index: -1;
+}
+.breadcrumb {
+	@include font-styles(white, 16px, normal, 400, 24px);
+	@include flex(row, center, center, 12px);
+	margin-top: 20px;
+	a {
+		text-decoration: none;
+		color: inherit;
+		&:hover {
+			color: $secondary;
+		}
+	}
+}
 .h1 {
 	@include font-styles($primary, 64px, normal, 700, 84px);
 }
@@ -200,6 +220,10 @@
 }
 .h5 {
 	@include font-styles($primary, 32px, normal, 600, 44px);
+	text-align: center;
+}
+.h6 {
+	@include font-styles($primary, 26px, normal, 600, 36px);
 	text-align: center;
 }
 .h7 {

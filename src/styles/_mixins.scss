@@ -2,6 +2,10 @@
 	max-width: 1200px;
 	margin: 0 auto;
 }
+@mixin container-sm() {
+	max-width: 800px;
+	margin: 0 auto;
+}
 
 @mixin flex($dir: row, $justify: center, $align: center, $gap: 0) {
 	display: flex;

@@ -1,0 +1,156 @@
+.about-us {
+	position: relative;
+	&-content {
+		@include container-sm;
+		padding: 100px 0;
+		text-align: center;
+	}
+}
+
+.missions {
+	&-container {
+		@include container;
+		display: grid;
+		grid-template-columns: auto 600px;
+		gap: 100px;
+		height: fit-content;
+		.missions-content {
+			margin: auto;
+		}
+		.missions-img {
+			position: relative;
+			height: 600px;
+			&-bg {
+				background-color: $primary;
+				position: absolute;
+
+				bottom: 0;
+				right: 0;
+				width: 500px;
+				height: 500px;
+			}
+			&-top {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 500px;
+				height: 500px;
+			}
+		}
+	}
+	&-stats {
+		@include container;
+		background-color: $primary-8;
+		padding: 80px 0;
+		margin: 100px auto;
+		.stats {
+			margin-top: 30px;
+			@include flex(row, center, center, 80px);
+		}
+	}
+}
+
+.why-us {
+	background-color: $primary;
+
+	&-container {
+		@include container;
+		padding: 80px 0;
+		&-header {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 100px;
+			margin-bottom: 40px;
+		}
+		&-content {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 30px;
+			&-card {
+				@include flex(row, center, flex-start, 15px);
+				background-color: rgba(255, 255, 255, 0.06);
+				padding: 45px;
+				color: white;
+				.card-icon {
+					width: 50px;
+					height: 50px;
+					background-color: rgba(255, 255, 255, 0.16);
+					@include flex(row, center, center, 0px);
+					flex-shrink: 0;
+					color: inherit;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+
+	&-content {
+		&-content {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 2px;
+			&-card {
+				@include flex(column, center, flex-start, 15px);
+				background-color: rgba(255, 255, 255, 0.06);
+				padding: 45px;
+				color: white;
+				.card-no {
+					width: 50px;
+					height: 50px;
+					background-color: rgba(255, 255, 255, 0.16);
+					@include flex(row, center, center, 0px);
+					color: inherit;
+					font-weight: 600;
+				}
+				&-btn {
+					@include btn-basic;
+					@include flex(row, flex-start, center, 10px);
+				}
+			}
+		}
+	}
+}
+
+.our-team {
+	@include container;
+	margin-top: 100px;
+	&-header {
+		color: black;
+		text-align: center;
+	}
+	&-content {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+		margin: 40px auto;
+		&-card {
+			padding: 20px;
+			cursor: pointer;
+			background-color: $primary-8;
+			text-align: center;
+			img {
+				width: 100%;
+			}
+			&-name {
+				@include font-styles($primary, 26px, normal, 600, 36px);
+				margin-top: 25px;
+				margin-bottom: 10px;
+			}
+			&:hover {
+				.our-team-content-card-name {
+					color: $secondary;
+				}
+			}
+		}
+	}
+
+	&-btn {
+		@include btn-primary;
+		margin: auto;
+		padding: 15px 30px;
+		@include flex(row, center, center, 10px);
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+}
