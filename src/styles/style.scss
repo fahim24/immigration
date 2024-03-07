@@ -1,14 +1,14 @@
-@import "variables";
-@import "mixins";
-@import "home";
-@import "about";
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Public Sans, sans-serif;
 }
+@import "variables";
+@import "mixins";
+@import "home";
+@import "about";
+@import "_services";
 
 .header {
 	background-color: $primary;
