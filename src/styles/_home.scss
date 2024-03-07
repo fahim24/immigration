@@ -232,6 +232,9 @@
 			background-color: $primary-8;
 			padding: 30px;
 			@include flex(column, center, flex-start, 24px);
+			img {
+				width: 100%;
+			}
 			&-btn {
 				@include btn-primary;
 				background-color: white;

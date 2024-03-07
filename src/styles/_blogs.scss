@@ -1,0 +1,32 @@
+.blogs-top {
+	background-color: $primary;
+	&-content {
+		@include container-sm;
+		padding: 100px 0;
+		text-align: center;
+	}
+}
+
+.blogs {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	&-card {
+		background-color: $primary-8;
+		padding: 30px;
+		@include flex(column, center, flex-start, 24px);
+		img {
+			width: 100%;
+		}
+		&-btn {
+			@include btn-primary;
+			background-color: white;
+			color: $primary;
+			padding: 15px 30px;
+			@include flex(row, center, center, 10px);
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
+}
