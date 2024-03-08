@@ -31,3 +31,61 @@
 		}
 	}
 }
+
+.service-details {
+	position: relative;
+	&-content {
+		@include container-sm;
+		padding-top: 100px;
+		text-align: center;
+		ul {
+			@include font-styles($gray, 18px, normal, 400, 30px);
+			text-align: left;
+			margin-top: 20px;
+			list-style: none;
+			li {
+				margin-bottom: 16px;
+				@include flex(row, flex-start, center, 16px);
+				i {
+					color: $secondary;
+					font-size: 24px;
+				}
+			}
+		}
+		&-form {
+			margin-top: 40px;
+			background-color: #023a51;
+			padding: 40px 50px;
+			@include flex(column, flex-start, flex-start, 20px);
+			width: 100%;
+			input,
+			textarea {
+				padding: 12px 18px;
+				width: 100%;
+				background-color: white;
+				border: none;
+			}
+			textarea {
+				resize: none;
+			}
+			.form-check {
+				@include flex(row, flex-start, center, 6px);
+				input {
+					width: fit-content;
+				}
+				label {
+					color: white;
+				}
+			}
+			.btn {
+				@include btn-primary;
+				width: 100%;
+				padding: 15px 30px;
+				@include flex(row, center, center, 10px);
+				&:hover {
+					opacity: 0.9;
+				}
+			}
+		}
+	}
+}

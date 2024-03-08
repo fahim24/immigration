@@ -222,6 +222,9 @@
 .h3 {
 	@include font-styles(white, 48px, normal, 600, 68px);
 }
+.h4 {
+	@include font-styles($primary, 38px, normal, 600, 52px);
+}
 .h5 {
 	@include font-styles($primary, 32px, normal, 600, 44px);
 	text-align: center;
