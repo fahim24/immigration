@@ -32,3 +32,11 @@
 		}
 	}
 }
+
+.blog-details {
+	position: relative;
+	&-content {
+		@include container-sm;
+		padding-top: 100px;
+	}
+}
