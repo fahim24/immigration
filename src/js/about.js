@@ -6,7 +6,7 @@ fetch("./src/components/testimonials.html")
 	});
 
 // Adding ".blogs" section
-fetch("./src/components/blogs.html")
+fetch("./src/components/blogs-section.html")
 	.then((response) => response.text())
 	.then((data) => {
 		document.querySelector(".testimonials").insertAdjacentHTML("afterend", data);
