@@ -11,30 +11,31 @@
 	&-container {
 		@include container;
 		display: grid;
-		grid-template-columns: auto 600px;
-		gap: 100px;
+		grid-template-columns: auto auto;
+		gap: 80px;
 		height: fit-content;
 		.missions-content {
 			margin: auto;
 		}
 		.missions-img {
 			position: relative;
-			height: 600px;
+			width: 580px;
+			height: 580px;
 			&-bg {
 				background-color: $primary;
 				position: absolute;
 
 				bottom: 0;
 				right: 0;
-				width: 500px;
-				height: 500px;
+				width: 530px;
+				height: 530px;
 			}
 			&-top {
 				position: absolute;
 				top: 0;
 				left: 0;
-				width: 500px;
-				height: 500px;
+				width: 530px;
+				height: 530px;
 			}
 		}
 	}

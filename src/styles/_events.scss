@@ -6,3 +6,47 @@
 		text-align: center;
 	}
 }
+
+.events {
+	&-card {
+		@include container;
+		display: grid;
+		grid-template-columns: auto auto;
+		gap: 80px;
+		margin: 100px auto;
+		height: fit-content;
+		&-content {
+			margin: auto auto;
+			&-btn {
+				@include btn-primary;
+				margin-top: 20px;
+				padding: 15px 30px;
+				@include flex(row, center, center, 10px);
+				&:hover {
+					opacity: 0.9;
+				}
+			}
+		}
+		&-img {
+			position: relative;
+			width: 580px;
+			height: 580px;
+			&-bg {
+				background-color: $primary;
+				position: absolute;
+
+				bottom: 0;
+				right: 0;
+				width: 530px;
+				height: 530px;
+			}
+			&-top {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 530px;
+				height: 530px;
+			}
+		}
+	}
+}
