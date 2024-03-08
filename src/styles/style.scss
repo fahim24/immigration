@@ -10,6 +10,7 @@
 @import "about";
 @import "services";
 @import "blogs";
+@import "contact";
 
 .header {
 	background-color: $primary;
@@ -197,6 +198,7 @@
 }
 .partial-bg {
 	background-color: $primary;
+	position: absolute;
 	height: 600px;
 	width: 100%;
 	z-index: -1;

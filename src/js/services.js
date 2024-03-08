@@ -23,7 +23,7 @@ fetch("./src/components/blogs-section.html")
 fetch("./src/components/contacts.html")
 	.then((response) => response.text())
 	.then((data) => {
-		document.querySelector(".blogs").insertAdjacentHTML("afterend", data);
+		document.querySelector(".blogs-section").insertAdjacentHTML("afterend", data);
 	});
 
 // Adding "footer" element

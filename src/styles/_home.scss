@@ -288,6 +288,9 @@
 					background-color: #f6f6f4;
 					border: none;
 				}
+				textarea {
+					resize: none;
+				}
 				.form-check {
 					@include flex(row, flex-start, center, 6px);
 					input {

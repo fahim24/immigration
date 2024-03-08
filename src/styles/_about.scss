@@ -83,32 +83,6 @@
 			}
 		}
 	}
-
-	&-content {
-		&-content {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: 2px;
-			&-card {
-				@include flex(column, center, flex-start, 15px);
-				background-color: rgba(255, 255, 255, 0.06);
-				padding: 45px;
-				color: white;
-				.card-no {
-					width: 50px;
-					height: 50px;
-					background-color: rgba(255, 255, 255, 0.16);
-					@include flex(row, center, center, 0px);
-					color: inherit;
-					font-weight: 600;
-				}
-				&-btn {
-					@include btn-basic;
-					@include flex(row, flex-start, center, 10px);
-				}
-			}
-		}
-	}
 }
 
 .our-team {
