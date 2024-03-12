@@ -38,5 +38,24 @@
 	&-content {
 		@include container-sm;
 		padding-top: 100px;
+		ul {
+			@include font-styles($gray, 18px, normal, 400, 30px);
+			text-align: left;
+			margin-top: 20px;
+			margin-bottom: 40px;
+			list-style: none;
+			li {
+				margin-bottom: 16px;
+				@include flex(row, flex-start, center, 16px);
+				i {
+					color: $secondary;
+					font-size: 24px;
+				}
+			}
+		}
+		&-tags {
+			@include flex(row, space-between, center, 10px);
+			margin: 24px auto;
+		}
 	}
 }
