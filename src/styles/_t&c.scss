@@ -1,0 +1,31 @@
+.tc-top {
+	background-color: $primary-8;
+	padding: 100px 0;
+	&-content {
+		@include container;
+	}
+}
+
+.tc-content {
+	@include container;
+	display: grid;
+	grid-template-columns: 25% 75%;
+	margin: 100px auto;
+	ul {
+		@include flex(column, flex-start, flex-start, 12px);
+		position: sticky;
+		top: 40px;
+		height: fit-content;
+		li {
+			padding: 6px 0;
+			border-bottom: 1px solid transparent;
+			&:hover {
+				color: $secondary;
+				border-bottom: 1px solid $secondary;
+			}
+		}
+	}
+	&-body {
+		@include flex(column, center, flex-start, 150px);
+	}
+}
