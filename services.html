@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Immigration practice Site" />
-		<meta name="author" content="Fahim" />
-		<meta name="keywords" content="HTML, CSS, JavaScript," />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<meta charset="UTF-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<meta name="description" content="Immigration practice Site" >
+		<meta name="author" content="Fahim" >
+		<meta name="keywords" content="HTML, CSS, JavaScript," >
+		<link rel="preconnect" href="https://fonts.googleapis.com" >
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
 		<link
 			href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap"
 			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./src/styles/style.css" />
+		>
+		<link rel="stylesheet" href="./src/styles/style.css" >
 		<title>Services | Canadian Horizon</title>
 
 		<script src="https://kit.fontawesome.com/78f34634fd.js" crossorigin="anonymous"></script>
@@ -22,60 +22,78 @@
 			<div class="header">
 				<div class="header-container">
 					<address class="header-contact">
-						<span class="h11"
-							><i class="fa-solid fa-mobile-screen-button" style="margin-right: 6px"></i>Phone: +47
-							5941 295</span
-						>
-						<span class="h11"
-							><i class="fa-regular fa-envelope" style="margin-right: 6px"></i>Mail:
-							swipe@mail.com</span
-						>
-						<span class="h11"
-							><i class="fa-regular fa-map" style="margin-right: 6px"></i>Find us: Road 20, Paris,
-							France</span
-						>
+						<span class="h11" title="Call us">
+							<i class="fa-solid fa-mobile-screen-button" style="margin-right: 6px"></i> 
+							Phone: +47 5941 295
+						</span>
+						<span class="h11" title="Send a mail">
+							<i class="fa-regular fa-envelope" style="margin-right: 6px"></i> 
+							Mail: swipe@mail.com
+						</span>
+						<span class="h11" title="Visit us">
+							<i class="fa-regular fa-map" style="margin-right: 6px"></i> 
+							Find us: Road 20, Paris, France
+						</span>
 					</address>
 					<div class="header-social">
-						<a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
-						<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-						<a href="https://www.youtube.com/"
-							><i class="fa-brands fa-youtube" style="color: red"></i
-						></a>
-						<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://twitter.com/?lang=en" title="Go to Twitter" target="_blank">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+						<a href="https://www.facebook.com/" title="Go to Facebook" target="_blank">
+							<i class="fa-brands fa-facebook-f"></i>
+						</a>
+						<a href="https://www.youtube.com/" title="Go to Youtube" target="_blank">
+							<i class="fa-brands fa-youtube" style="color: red"></i>
+						</a>
+						<a href="https://www.instagram.com/" title="Go to Instagram" target="_blank">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
 					</div>
 				</div>
 			</div>
 			<nav class="nav-container">
-				<a href="./index.html"><img src="./src/assets/svg/logo.svg" alt="logo" /></a>
+				<a href="./index.html" title="Home">
+					<img src="./src/assets/svg/logo.svg" alt="logo" >
+				</a>
 				<div class="nav-items h9">
 					<div>
-						<a class="nav-link" href="./index.html">Home</a>
+						<a class="nav-link" href="./index.html" title="Home">Home</a>
 					</div>
 					<div>
-						<a class="nav-link" href="./about.html">About</a>
+						<a class="nav-link" href="./about.html" title="About">About</a>
 					</div>
 					<div class="dropdown">
-						<a href="./services.html" style="border-color: #e22329; color: #e22329"
-							>Services <i class="fa-solid fa-angle-down" style="margin-left: 6px"></i
-						></a>
+						<a href="./services.html" title="Services" style="border-color: #e22329; color: #e22329">
+							Services <i class="fa-solid fa-angle-down" style="margin-left: 6px"></i>
+						</a>
 						<div class="dropdown-content">
-							<a class="dropdown-link" href="./book-a-consulation.html">Book a Consultation</a>
-							<a class="dropdown-link" href="./team-list.html">Team List</a>
+							<a class="dropdown-link" href="./book-a-consulation.html" title="Book a Consultation">
+								Book a Consultation
+							</a>
+							<a class="dropdown-link" href="./team-list.html" title="Team List">Team List</a>
 						</div>
 					</div>
-					<div><a href="./blogs.html" class="nav-link">Blogs</a></div>
-					<div><a href="./contact.html" class="nav-link">Contact</a></div>
-					<div><a href="./events.html" class="nav-link">Events</a></div>
+					<div>
+						<a href="./blogs.html" class="nav-link" title="Blogs">Blogs</a>
+					</div>
+					<div>
+						<a href="./contact.html" class="nav-link" title="Contact">Contact</a>
+					</div>
+					<div>
+						<a href="./events.html" class="nav-link" title="Events">Events</a>
+					</div>
 				</div>
 				<div class="nav-search">
-					<div class="search">
+					<div class="search" title="Search">
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</div>
-					<button class="btn">Get in Touch</button>
+					<button class="btn" onclick="document.location='./contact.html'" title="Contact us">
+						Get in Touch
+					</button>
 				</div>
 			</nav>
-			<!-- <div class="dividerV"></div> -->
 		</header>
+		
 		<main>
 			<section class="services-top">
 				<div class="services-top-content">
@@ -84,76 +102,76 @@
 						Discover how our tech solutions can transform your business. Explore our features and
 						take your business to new heights.
 					</p>
-					<span class="breadcrumb"
-						><a href="./index.html">Home</a> <i class="fa-solid fa-angle-right"></i>
-						<a href="./services.html">Services</a></span
-					>
+					<span class="breadcrumb">
+						<a href="./index.html" title="Home">Home</a> <i class="fa-solid fa-angle-right"></i>
+						Services
+					</span>
 				</div>
 			</section>
 			<section class="services">
 				<div class="services-card">
-					<img src="./src/assets/png/service1.png" alt="" />
+					<img src="./src/assets/png/service1.png" alt="service cover" >
 					<h5 class="h5">Family Sponsorship</h5>
 					<p class="h9" style="color: #59667d">
 						Expert guidance for temporary residence permits, visas, and immigration processes
 						tailored to your unique needs.
 					</p>
-					<button class="services-card-btn" onclick="document.location='./service-details.html'">
+					<button class="services-card-btn" onclick="document.location='./service-details.html'" title="Service details">
 						LEARN MORE <i class="fa-solid fa-arrow-right"></i>
 					</button>
 				</div>
 				<div class="services-card">
-					<img src="./src/assets/png/service2.png" alt="" />
+					<img src="./src/assets/png/service2.png" alt="service cover" >
 					<h5 class="h5">Canadian Work Permit</h5>
 					<p class="h9" style="color: #59667d">
 						Expert guidance for temporary residence permits, visas, and immigration processes
 						tailored to your unique needs.
 					</p>
-					<button class="services-card-btn" onclick="document.location='./service-details.html'">
+					<button class="services-card-btn" onclick="document.location='./service-details.html'" title="Service details">
 						LEARN MORE <i class="fa-solid fa-arrow-right"></i>
 					</button>
 				</div>
 				<div class="services-card">
-					<img src="./src/assets/png/service4.png" alt="" />
+					<img src="./src/assets/png/service4.png" alt="service cover" >
 					<h5 class="h5">Study in Canada</h5>
 					<p class="h9" style="color: #59667d">
 						Expert guidance for temporary residence permits, visas, and immigration processes
 						tailored to your unique needs.
 					</p>
-					<button class="services-card-btn" onclick="document.location='./service-details.html'">
+					<button class="services-card-btn" onclick="document.location='./service-details.html'" title="Service details">
 						LEARN MORE <i class="fa-solid fa-arrow-right"></i>
 					</button>
 				</div>
 				<div class="services-card">
-					<img src="./src/assets/png/service5.png" alt="" />
+					<img src="./src/assets/png/service5.png" alt="service cover" >
 					<h5 class="h5">Start-Up Visa</h5>
 					<p class="h9" style="color: #59667d">
 						Expert guidance for temporary residence permits, visas, and immigration processes
 						tailored to your unique needs.
 					</p>
-					<button class="services-card-btn" onclick="document.location='./service-details.html'">
+					<button class="services-card-btn" onclick="document.location='./service-details.html'" title="Service details">
 						LEARN MORE <i class="fa-solid fa-arrow-right"></i>
 					</button>
 				</div>
 				<div class="services-card">
-					<img src="./src/assets/png/service3.png" alt="" />
+					<img src="./src/assets/png/service3.png" alt="service cover" >
 					<h5 class="h5">LMIA Application</h5>
 					<p class="h9" style="color: #59667d">
 						Expert guidance for temporary residence permits, visas, and immigration processes
 						tailored to your unique needs.
 					</p>
-					<button class="services-card-btn" onclick="document.location='./service-details.html'">
+					<button class="services-card-btn" onclick="document.location='./service-details.html'" title="Service details">
 						LEARN MORE <i class="fa-solid fa-arrow-right"></i>
 					</button>
 				</div>
 				<div class="services-card">
-					<img src="./src/assets/png/service6.png" alt="" />
+					<img src="./src/assets/png/service6.png" alt="service cover" >
 					<h5 class="h5">Immigration to Canada</h5>
 					<p class="h9" style="color: #59667d">
 						Expert guidance for temporary residence permits, visas, and immigration processes
 						tailored to your unique needs.
 					</p>
-					<button class="services-card-btn" onclick="document.location='./service-details.html'">
+					<button class="services-card-btn" onclick="document.location='./service-details.html'" title="Service details">
 						LEARN MORE <i class="fa-solid fa-arrow-right"></i>
 					</button>
 				</div>

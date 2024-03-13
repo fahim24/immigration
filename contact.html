@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Immigration practice Site" />
-		<meta name="author" content="Fahim" />
-		<meta name="keywords" content="HTML, CSS, JavaScript," />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<meta charset="UTF-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<meta name="description" content="Immigration practice Site" >
+		<meta name="author" content="Fahim" >
+		<meta name="keywords" content="HTML, CSS, JavaScript," >
+		<link rel="preconnect" href="https://fonts.googleapis.com" >
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
 		<link
 			href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap"
 			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./src/styles/style.css" />
+		>
+		<link rel="stylesheet" href="./src/styles/style.css" >
 		<title>Contact | Canadian Horizon</title>
 
 		<script src="https://kit.fontawesome.com/78f34634fd.js" crossorigin="anonymous"></script>
@@ -22,66 +22,78 @@
 			<div class="header">
 				<div class="header-container">
 					<address class="header-contact">
-						<span class="h11"
-							><i class="fa-solid fa-mobile-screen-button" style="margin-right: 6px"></i>Phone: +47
-							5941 295</span
-						>
-						<span class="h11"
-							><i class="fa-regular fa-envelope" style="margin-right: 6px"></i>Mail:
-							swipe@mail.com</span
-						>
-						<span class="h11"
-							><i class="fa-regular fa-map" style="margin-right: 6px"></i>Find us: Road 20, Paris,
-							France</span
-						>
+						<span class="h11" title="Call us">
+							<i class="fa-solid fa-mobile-screen-button" style="margin-right: 6px"></i> 
+							Phone: +47 5941 295
+						</span>
+						<span class="h11" title="Send a mail">
+							<i class="fa-regular fa-envelope" style="margin-right: 6px"></i> 
+							Mail: swipe@mail.com
+						</span>
+						<span class="h11" title="Visit us">
+							<i class="fa-regular fa-map" style="margin-right: 6px"></i> 
+							Find us: Road 20, Paris, France
+						</span>
 					</address>
 					<div class="header-social">
-						<a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
-						<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-						<a href="https://www.youtube.com/"
-							><i class="fa-brands fa-youtube" style="color: red"></i
-						></a>
-						<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://twitter.com/?lang=en" title="Go to Twitter" target="_blank">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+						<a href="https://www.facebook.com/" title="Go to Facebook" target="_blank">
+							<i class="fa-brands fa-facebook-f"></i>
+						</a>
+						<a href="https://www.youtube.com/" title="Go to Youtube" target="_blank">
+							<i class="fa-brands fa-youtube" style="color: red"></i>
+						</a>
+						<a href="https://www.instagram.com/" title="Go to Instagram" target="_blank">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
 					</div>
 				</div>
 			</div>
 			<nav class="nav-container">
-				<div><img src="./src/assets/svg/logo.svg" alt="logo" /></div>
+				<a href="./index.html" title="Home">
+					<img src="./src/assets/svg/logo.svg" alt="logo" >
+				</a>
 				<div class="nav-items h9">
 					<div>
-						<a class="nav-link" href="./index.html">Home</a>
+						<a class="nav-link" href="./index.html" title="Home">Home</a>
 					</div>
 					<div>
-						<a class="nav-link" href="./about.html">About</a>
+						<a class="nav-link" href="./about.html" title="About">About</a>
 					</div>
 					<div class="dropdown">
-						<a href="./services.html"
-							>Services <i class="fa-solid fa-angle-down" style="margin-left: 6px"></i
-						></a>
+						<a href="./services.html" title="Services">
+							Services <i class="fa-solid fa-angle-down" style="margin-left: 6px"></i>
+						</a>
 						<div class="dropdown-content">
-							<a class="dropdown-link" href="./book-a-consulation.html">Book a Consultation</a>
-							<a class="dropdown-link" href="./team-list.html">Team List</a>
+							<a class="dropdown-link" href="./book-a-consulation.html" title="Book a Consultation">
+								Book a Consultation
+							</a>
+							<a class="dropdown-link" href="./team-list.html" title="Team List">Team List</a>
 						</div>
 					</div>
 					<div>
-						<a href="./blogs.html" class="nav-link">Blog</a>
+						<a href="./blogs.html" class="nav-link" title="Blogs">Blogs</a>
 					</div>
 					<div>
-						<a href="./contact.html" class="nav-link" style="border-color: #e22329; color: #e22329"
-							>Contact</a
-						>
+						<a href="./contact.html" class="nav-link" title="Contact" style="border-color: #e22329; color: #e22329">Contact</a>
 					</div>
-					<div><a href="./events.html" class="nav-link">Events</a></div>
+					<div>
+						<a href="./events.html" class="nav-link" title="Events">Events</a>
+					</div>
 				</div>
 				<div class="nav-search">
-					<div class="search">
+					<div class="search" title="Search">
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</div>
-					<button class="btn">Get in Touch</button>
+					<button class="btn" onclick="document.location='./contact.html'" title="Contact us">
+						Get in Touch
+					</button>
 				</div>
 			</nav>
-			<!-- <div class="dividerV"></div> -->
 		</header>
+		
 		<main>
 			<section class="contact-us">
 				<div class="partial-bg"></div>
@@ -91,10 +103,10 @@
 						Feel free to reach out to us using the options below, and our dedicated team will
 						respond to your inquiries promptly.
 					</p>
-					<span class="breadcrumb"
-						><a href="./index.html">Home</a> <i class="fa-solid fa-angle-right"></i>
-						<a href="./contact.html">Contact</a></span
-					>
+					<span class="breadcrumb">
+						<a href="./index.html" title="Home">Home</a> <i class="fa-solid fa-angle-right"></i>
+						Contact
+					</span>
 				</div>
 				<div class="contact-us-content" style="background-color: #ebf0f1">
 					<div class="contact-us-content-form">
@@ -107,14 +119,14 @@
 							</p>
 						</div>
 						<form>
-							<input type="text" placeholder="Your name *" />
-							<input type="text" placeholder="Email address *" />
-							<textarea cols="1" rows="5" placeholder="Message"></textarea>
+							<input type="text" placeholder="Your name *" title="Enter your name">
+							<input type="text" placeholder="Email address *" title="Enter your email">
+							<textarea cols="1" rows="5" placeholder="Message" title="Write your message"></textarea>
 
-							<button class="btn">SUBMIT <i class="fa-solid fa-arrow-right"></i></button>
+							<button class="btn" title="Submit form" disabled>SUBMIT <i class="fa-solid fa-arrow-right"></i></button>
 						</form>
 					</div>
-					<div><img src="./src/assets/png/img1.png" alt="" /></div>
+					<div><img src="./src/assets/png/img1.png" alt="cover image" ></div>
 				</div>
 				<div class="contact-us-cards">
 					<div class="contact-us-cards-card">
@@ -162,48 +174,24 @@
 						<div class="map-info-card-content">
 							<p class="h7" style="color: #023a51; margin-bottom: 16px">Contact details</p>
 
-							<p class="h9" style="color: #59667d; margin-bottom: 27px">
+							<p class="h9" style="color: #59667d; margin-bottom: 27px" title="Our contact details">
 								<span style="font-weight: 600">Address:</span> 908 Rose Street, Regina, Saskatchewan
-								<br />
-								<span style="font-weight: 600">Phone:</span> +1 (215) 557-1122 <br />
+								<br >
+								<span style="font-weight: 600">Phone:</span> +1 (215) 557-1122 <br >
 								<span style="font-weight: 600">Email:</span> hello@company.com
 							</p>
 							<p class="h7" style="color: #023a51; margin-bottom: 16px">Opening hours</p>
-							<div>
-								<p
-									class="h9"
-									style="
-										display: flex;
-										justify-content: space-between;
-										align-items: center;
-										color: gray;
-									"
-								>
-									<span style="font-weight: 600">Monday - Friday</span
-									><span>09.00 AM - 6.00 PM</span>
+							<div title="Opening hours">
+								<p class="h9" style=" display: flex; justify-content: space-between; align-items: center; color: gray;">
+									<span style="font-weight: 600">Monday - Friday</span>
+									<span>09.00 AM - 6.00 PM</span>
 								</p>
 								<div class="dividerV" style="margin: 12px 0"></div>
-								<p
-									class="h9"
-									style="
-										display: flex;
-										justify-content: space-between;
-										align-items: center;
-										color: gray;
-									"
-								>
+								<p class="h9" style=" display: flex; justify-content: space-between; align-items: center; color: gray;">
 									<span style="font-weight: 600">Saturday</span><span>09.00 AM - 2.00 PM</span>
 								</p>
 								<div class="dividerV" style="margin: 12px 0"></div>
-								<p
-									class="h9"
-									style="
-										display: flex;
-										justify-content: space-between;
-										align-items: center;
-										color: gray;
-									"
-								>
+								<p class="h9" style=" display: flex; justify-content: space-between; align-items: center; color: gray;">
 									<span style="font-weight: 600">Sunday</span><span>Closed</span>
 								</p>
 							</div>

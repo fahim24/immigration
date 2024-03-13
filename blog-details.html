@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Immigration practice Site" />
-		<meta name="author" content="Fahim" />
-		<meta name="keywords" content="HTML, CSS, JavaScript," />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Immigration practice Site">
+		<meta name="author" content="Fahim">
+		<meta name="keywords" content="HTML, CSS, JavaScript,">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./src/styles/style.css" />
+			rel="stylesheet">
+		<link rel="stylesheet" href="./src/styles/style.css">
 		<title>Blog Details | Canadian Horizon</title>
 
 		<script src="https://kit.fontawesome.com/78f34634fd.js" crossorigin="anonymous"></script>
@@ -22,79 +21,85 @@
 			<div class="header">
 				<div class="header-container">
 					<address class="header-contact">
-						<span class="h11"
-							><i class="fa-solid fa-mobile-screen-button" style="margin-right: 6px"></i>Phone: +47
-							5941 295</span
-						>
-						<span class="h11"
-							><i class="fa-regular fa-envelope" style="margin-right: 6px"></i>Mail:
-							swipe@mail.com</span
-						>
-						<span class="h11"
-							><i class="fa-regular fa-map" style="margin-right: 6px"></i>Find us: Road 20, Paris,
-							France</span
-						>
+						<span class="h11" title="Call us">
+							<i class="fa-solid fa-mobile-screen-button" style="margin-right: 6px"></i> 
+							Phone: +47 5941 295
+						</span>
+						<span class="h11" title="Send a mail">
+							<i class="fa-regular fa-envelope" style="margin-right: 6px"></i> 
+							Mail: swipe@mail.com
+						</span>
+						<span class="h11" title="Visit us">
+							<i class="fa-regular fa-map" style="margin-right: 6px"></i> 
+							Find us: Road 20, Paris, France
+						</span>
 					</address>
 					<div class="header-social">
-						<a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
-						<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-						<a href="https://www.youtube.com/"
-							><i class="fa-brands fa-youtube" style="color: red"></i
-						></a>
-						<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://twitter.com/?lang=en" title="Go to Twitter" target="_blank">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+						<a href="https://www.facebook.com/" title="Go to Facebook" target="_blank">
+							<i class="fa-brands fa-facebook-f"></i>
+						</a>
+						<a href="https://www.youtube.com/" title="Go to Youtube" target="_blank">
+							<i class="fa-brands fa-youtube" style="color: red"></i>
+						</a>
+						<a href="https://www.instagram.com/" title="Go to Instagram" target="_blank">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
 					</div>
 				</div>
 			</div>
 			<nav class="nav-container">
-				<a href="./index.html"><img src="./src/assets/svg/logo.svg" alt="logo" /></a>
+				<a href="./index.html" title="Home">
+					<img src="./src/assets/svg/logo.svg" alt="logo" >
+				</a>
 				<div class="nav-items h9">
 					<div>
-						<a class="nav-link" href="./index.html">Home</a>
+						<a class="nav-link" href="./index.html" title="Home">Home</a>
 					</div>
 					<div>
-						<a class="nav-link" href="./about.html">About</a>
+						<a class="nav-link" href="./about.html" title="About">About</a>
 					</div>
 					<div class="dropdown">
-						<a href="./services.html"
-							>Services <i class="fa-solid fa-angle-down" style="margin-left: 6px"></i
-						></a>
+						<a href="./services.html" title="Services">
+							Services <i class="fa-solid fa-angle-down" style="margin-left: 6px"></i>
+						</a>
 						<div class="dropdown-content">
-							<a class="dropdown-link" href="./book-a-consulation.html">Book a Consultation</a>
-							<a class="dropdown-link" href="./team-list.html">Team List</a>
+							<a class="dropdown-link" href="./book-a-consulation.html" title="Book a Consultation">
+								Book a Consultation
+							</a>
+							<a class="dropdown-link" href="./team-list.html" title="Team List">Team List</a>
 						</div>
 					</div>
 					<div>
-						<a href="./blogs.html" class="nav-link" style="border-color: #e22329; color: #e22329"
-							>Blogs</a
-						>
+						<a href="./blogs.html" class="nav-link" title="Blogs" style="border-color: #e22329; color: #e22329">Blogs</a>
 					</div>
-					<div><a href="./contact.html" class="nav-link">Contact</a></div>
-					<div><a href="./events.html" class="nav-link">Events</a></div>
+					<div>
+						<a href="./contact.html" class="nav-link" title="Contact">Contact</a>
+					</div>
+					<div>
+						<a href="./events.html" class="nav-link" title="Events">Events</a>
+					</div>
 				</div>
 				<div class="nav-search">
-					<div class="search">
+					<div class="search" title="Search">
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</div>
-					<button class="btn">Get in Touch</button>
+					<button class="btn" onclick="document.location='./contact.html'" title="Contact us">
+						Get in Touch
+					</button>
 				</div>
 			</nav>
-			<!-- <div class="dividerV"></div> -->
 		</header>
+		
 		<main>
 			<section class="blog-details">
 				<div class="partial-bg"></div>
 				<div class="blog-details-content">
-					<div
-						class="h10"
-						style="
-							background-color: white;
-							padding: 6px 16px;
-							width: fit-content;
-							margin-bottom: 10px;
-						"
-					>
+					<p class="h10" style=" background-color: white; padding: 6px 16px; width: fit-content; margin-bottom: 10px;">
 						Study in Canada
-					</div>
+					</p>
 					<h1 class="h1" style="color: white; margin-bottom: 20px">
 						Canada's International Student Policy
 					</h1>
@@ -102,40 +107,29 @@
 						<p class="h9" style="color: white; display: flex; gap: 16px">
 							<span>2022/12/06 AT 4:13 AM</span> | <span>Admin</span> | <span>6 Min Read</span>
 						</p>
-						<span class="breadcrumb" style="margin: 0"
-							><a href="./index.html">Home</a> <i class="fa-solid fa-angle-right"></i>
-							<a href="./blogs.html">Blogs</a> <i class="fa-solid fa-angle-right"></i>
-							<a href="./blog-details.html">Blog Details</a></span
-						>
+						<span class="breadcrumb" style="margin: 0">
+							<a href="./index.html" title="Home">Home</a> <i class="fa-solid fa-angle-right"></i>
+							<a href="./blogs.html" title="Blogs">Blogs</a> <i class="fa-solid fa-angle-right"></i>
+							Blog Details
+						</span>
 					</div>
-					<img src="./src/assets/png/img1.png" alt="" style="margin: 80px auto; width: 100%" />
+					<img src="./src/assets/png/img1.png" alt="cover image" style="margin: 80px auto; width: 100%" >
 
 					<div style="position: relative">
-						<div
-							style="
-								position: absolute;
-								display: flex;
-								flex-direction: column;
-								gap: 16px;
-								left: -50px;
-								color: #59667d;
-								align-items: center;
-								width: fit-content;
-								height: fit-content;
-								font-size: 22px;
-							"
-						>
-							<a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a
-							><a href="https://www.facebook.com/" target="_blank"
-								><i class="fa-brands fa-facebook-f"></i></a
-							><a href="https://www.linkedin.com/" target="_blank"
-								><i class="fa-brands fa-linkedin"></i></a
-							><a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+						<div style=" position: absolute; display: flex; flex-direction: column; gap: 16px; left: -50px; color: #59667d; align-items: center; width: fit-content; height: fit-content; font-size: 22px;">
+							<a href="https://twitter.com/" title="Share in Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+							<a href="https://www.facebook.com/" title="Share in Facebook" target="_blank">
+								<i class="fa-brands fa-facebook-f"></i>
+							</a>
+							<a href="https://www.linkedin.com/" title="Share in Linkedin" target="_blank">
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+							<a href="#" title="Share" target="_blank"><i class="fa-solid fa-link"></i></a>
 						</div>
 						<p class="h8" style="text-align: left; font-weight: 400; margin-bottom: 40px">
 							In sit amet ipsum a odio imperdiet placerat et ac dui. Vivamus suscipit ut erat quis
 							cursus. Nam quis mauris quis elit accumsan sollicitudin non sit amet odio. Vestibulum
-							et nulla ut eros consequat mollis vel in magna. <br /><br />
+							et nulla ut eros consequat mollis vel in magna. <br ><br >
 							Aenean vehicula elit massa, vitae facilisis ligula egestas vitae. Morbi pulvinar mi ac
 							ante fringilla, nec dapibus libero blandit. Nunc ut pellentesque sem. Nunc quis
 							tristique tortor, sit amet finibus sapien. Suspendisse venenatis, lacus ac aliquam
@@ -146,31 +140,23 @@
 						<p class="h8" style="text-align: left; font-weight: 400; margin: 40px auto">
 							In sit amet ipsum a odio imperdiet placerat et ac dui. Vivamus suscipit ut erat quis
 							cursus. Nam quis mauris quis elit accumsan sollicitudin non sit amet odio. Vestibulum
-							et nulla ut eros consequat mollis vel in magna. <br /><br />
+							et nulla ut eros consequat mollis vel in magna. <br ><br >
 							Aenean vehicula elit massa, vitae facilisis ligula egestas vitae. Morbi pulvinar mi ac
 							ante fringilla, nec dapibus libero blandit. Nunc ut pellentesque sem. Nunc quis
 							tristique tortor, sit amet finibus sapien. Suspendisse venenatis, lacus ac aliquam
 							mollis, nisl risus maximus lectus, vitae faucibus lacus ante vel diam. Sed lectus
 							purus, lobortis eu aliquet at, ullamcorper.
 						</p>
-						<div
-							style="
-								padding: 40px 60px;
-								background-color: rgba(2, 58, 81, 0.08);
-								border-left: 4px solid #023a51;
-								margin-bottom: 40px;
-							"
-						>
-							<q class="h8" style="color: #023a51"
-								>urabitur varius eros rutrum consequat Mauris aewa sollicitudin enim condimentum
-								luctus enim justo non molestie nisl</q
-							>
+						<div style="padding: 40px 60px; background-color: rgba(2, 58, 81, 0.08); border-left: 4px solid #023a51; margin-bottom: 40px;">
+							<q class="h8" style="color: #023a51">
+								urabitur varius eros rutrum consequat Mauris aewa sollicitudin enim condimentum
+								luctus enim justo non molestie nisl</q>
 						</div>
 						<h4 class="h4">Adjust the work/life balance.</h4>
 						<p class="h8" style="text-align: left; font-weight: 400; margin: 40px auto">
 							In sit amet ipsum a odio imperdiet placerat et ac dui. Vivamus suscipit ut erat quis
 							cursus. Nam quis mauris quis elit accumsan sollicitudin non sit amet odio. Vestibulum
-							et nulla ut eros consequat mollis vel in magna. <br /><br />
+							et nulla ut eros consequat mollis vel in magna. <br ><br >
 							Aenean vehicula elit massa, vitae facilisis ligula egestas vitae. Morbi pulvinar mi ac
 							ante fringilla, nec dapibus libero blandit. Nunc ut pellentesque sem. Nunc quis
 							tristique tortor, sit amet finibus sapien. Suspendisse venenatis, lacus ac aliquam
@@ -208,7 +194,7 @@
 						<p class="h8" style="text-align: left; font-weight: 400; margin: 40px auto">
 							In sit amet ipsum a odio imperdiet placerat et ac dui. Vivamus suscipit ut erat quis
 							cursus. Nam quis mauris quis elit accumsan sollicitudin non sit amet odio. Vestibulum
-							et nulla ut eros consequat mollis vel in magna. <br /><br />
+							et nulla ut eros consequat mollis vel in magna. <br ><br >
 							Aenean vehicula elit massa, vitae facilisis ligula egestas vitae. Morbi pulvinar mi ac
 							ante fringilla, nec dapibus libero blandit. Nunc ut pellentesque sem. Nunc quis
 							tristique tortor, sit amet finibus sapien. Suspendisse venenatis, lacus ac aliquam
@@ -218,46 +204,26 @@
 						<div class="dividerV"></div>
 						<div class="blog-details-content-tags">
 							<div>
-								<span class="h9" style="color: #59667d; font-weight: 600; margin-right: 16px"
-									>Post Tags : </span
-								><span
-									class="h10"
-									style="
-										margin-right: 6px;
-										background-color: rgba(89, 102, 125, 0.08);
-										padding: 6px 16px;
-										color: #59667d;
-									"
-									>Study in Canada</span
-								><span
-									class="h10"
-									style="
-										margin-right: 6px;
-										background-color: rgba(89, 102, 125, 0.08);
-										padding: 6px 16px;
-										color: #59667d;
-									"
-									>Immigration</span
-								>
+								<span class="h9" style="color: #59667d; font-weight: 600; margin-right: 16px">
+									Post Tags : </span>
+								<span class="h10" style="margin-right: 6px; background-color: rgba(89, 102, 125, 0.08);	padding: 6px 16px; color: #59667d;" title="Study in Canada">
+									Study in Canada
+								</span>
+								<span class="h10" style=" margin-right: 6px; background-color: rgba(89, 102, 125, 0.08); padding: 6px 16px; color: #59667d;" title="Immigration">
+									Immigration
+								</span>
 							</div>
-							<div
-								style="
-									display: flex;
-									gap: 16px;
-									color: #59667d;
-									align-items: center;
-									width: fit-content;
-									height: fit-content;
-									font-size: 20px;
-								"
-							>
-								<a href="https://twitter.com/" target="_blank"
-									><i class="fa-brands fa-twitter"></i></a
-								><a href="https://www.facebook.com/" target="_blank"
-									><i class="fa-brands fa-facebook-f"></i></a
-								><a href="https://www.linkedin.com/" target="_blank"
-									><i class="fa-brands fa-linkedin"></i></a
-								><a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<div style="display: flex; gap: 16px; color: #59667d; align-items: center; width: fit-content; height: fit-content; font-size: 20px;">
+								<a href="https://twitter.com/" title="Share on Twitter" target="_blank">
+									<i class="fa-brands fa-twitter"></i>
+								</a>
+								<a href="https://www.facebook.com/" title="Share on Facebook " target="_blank">
+									<i class="fa-brands fa-facebook-f"></i>
+								</a>
+								<a href="https://www.linkedin.com/" title="Share on Linkedin" target="_blank">
+									<i class="fa-brands fa-linkedin"></i>
+								</a>
+								<a href="#" title="Share" target="_blank"><i class="fa-solid fa-link"></i></a>
 							</div>
 						</div>
 						<div class="dividerV"></div>
@@ -268,17 +234,14 @@
 						<h3 class="h3" style="color: #023a51; margin-top: 8px">RELATED BLOGS</h3>
 
 						<div style="margin: auto 0">
-							<button
-								class="testimonials-container-header-btn"
-								onclick="document.location='./blogs.html'"
-							>
+							<button class="testimonials-container-header-btn" onclick="document.location='./blogs.html'" title="Blogs">
 								READ ALL BLOGS <i class="fa-solid fa-arrow-right"></i>
 							</button>
 						</div>
 					</div>
 					<div class="blogs-section-content">
 						<div class="blogs-section-content-card">
-							<img src="./src/assets/png/blog1.png" alt="" />
+							<img src="./src/assets/png/blog1.png" alt="blog cover" >
 							<p class="h7" style="color: #023a51">
 								The rise of digital wallets: a fintech game-changer
 							</p>
@@ -289,12 +252,13 @@
 							<button
 								class="blogs-section-content-card-btn"
 								onclick="document.location='./blog-details.html'"
+								title="Blog details"
 							>
 								READ MORE <i class="fa-solid fa-arrow-right"></i>
 							</button>
 						</div>
 						<div class="blogs-section-content-card">
-							<img src="./src/assets/png/blog2.png" alt="" />
+							<img src="./src/assets/png/blog2.png" alt="blog cover" >
 							<p class="h7" style="color: #023a51">
 								The rise of digital wallets: a fintech game-changer
 							</p>
@@ -305,12 +269,13 @@
 							<button
 								class="blogs-section-content-card-btn"
 								onclick="document.location='./blog-details.html'"
+								title="Blog details"
 							>
 								READ MORE <i class="fa-solid fa-arrow-right"></i>
 							</button>
 						</div>
 						<div class="blogs-section-content-card">
-							<img src="./src/assets/png/blog3.png" alt="" />
+							<img src="./src/assets/png/blog3.png" alt="blog cover" >
 							<p class="h7" style="color: #023a51">
 								The rise of digital wallets: a fintech game-changer
 							</p>
@@ -321,6 +286,7 @@
 							<button
 								class="blogs-section-content-card-btn"
 								onclick="document.location='./blog-details.html'"
+								title="Blog details"
 							>
 								READ MORE <i class="fa-solid fa-arrow-right"></i>
 							</button>

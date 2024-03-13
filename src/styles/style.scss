@@ -112,6 +112,7 @@
 	.search {
 		color: $gray;
 		font-size: 20px;
+		cursor: text;
 	}
 	.btn {
 		@include btn-primary;

@@ -11,3 +11,6 @@ fetch("./src/components/footer.html")
 	.then((data) => {
 		document.querySelector("main").insertAdjacentHTML("afterend", data);
 	});
+
+
+	

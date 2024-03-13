@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Immigration practice Site" />
-		<meta name="author" content="Fahim" />
-		<meta name="keywords" content="HTML, CSS, JavaScript," />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<meta charset="UTF-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<meta name="description" content="Immigration practice Site" >
+		<meta name="author" content="Fahim" >
+		<meta name="keywords" content="HTML, CSS, JavaScript," >
+		<link rel="preconnect" href="https://fonts.googleapis.com" >
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
 		<link
 			href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap"
 			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./src/styles/style.css" />
+		>
+		<link rel="stylesheet" href="./src/styles/style.css" >
 		<title>Event Details | Canadian Horizon</title>
 
 		<script src="https://kit.fontawesome.com/78f34634fd.js" crossorigin="anonymous"></script>
@@ -22,66 +22,78 @@
 			<div class="header">
 				<div class="header-container">
 					<address class="header-contact">
-						<span class="h11"
-							><i class="fa-solid fa-mobile-screen-button" style="margin-right: 6px"></i>Phone: +47
-							5941 295</span
-						>
-						<span class="h11"
-							><i class="fa-regular fa-envelope" style="margin-right: 6px"></i>Mail:
-							swipe@mail.com</span
-						>
-						<span class="h11"
-							><i class="fa-regular fa-map" style="margin-right: 6px"></i>Find us: Road 20, Paris,
-							France</span
-						>
+						<span class="h11" title="Call us">
+							<i class="fa-solid fa-mobile-screen-button" style="margin-right: 6px"></i> 
+							Phone: +47 5941 295
+						</span>
+						<span class="h11" title="Send a mail">
+							<i class="fa-regular fa-envelope" style="margin-right: 6px"></i> 
+							Mail: swipe@mail.com
+						</span>
+						<span class="h11" title="Visit us">
+							<i class="fa-regular fa-map" style="margin-right: 6px"></i> 
+							Find us: Road 20, Paris, France
+						</span>
 					</address>
 					<div class="header-social">
-						<a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
-						<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-						<a href="https://www.youtube.com/"
-							><i class="fa-brands fa-youtube" style="color: red"></i
-						></a>
-						<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://twitter.com/?lang=en" title="Go to Twitter" target="_blank">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+						<a href="https://www.facebook.com/" title="Go to Facebook" target="_blank">
+							<i class="fa-brands fa-facebook-f"></i>
+						</a>
+						<a href="https://www.youtube.com/" title="Go to Youtube" target="_blank">
+							<i class="fa-brands fa-youtube" style="color: red"></i>
+						</a>
+						<a href="https://www.instagram.com/" title="Go to Instagram" target="_blank">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
 					</div>
 				</div>
 			</div>
 			<nav class="nav-container">
-				<a href="./index.html"><img src="./src/assets/svg/logo.svg" alt="logo" /></a>
+				<a href="./index.html" title="Home">
+					<img src="./src/assets/svg/logo.svg" alt="logo" >
+				</a>
 				<div class="nav-items h9">
 					<div>
-						<a class="nav-link" href="./index.html">Home</a>
+						<a class="nav-link" href="./index.html" title="Home">Home</a>
 					</div>
 					<div>
-						<a class="nav-link" href="./about.html">About</a>
+						<a class="nav-link" href="./about.html" title="About">About</a>
 					</div>
 					<div class="dropdown">
-						<a href="./services.html"
-							>Services <i class="fa-solid fa-angle-down" style="margin-left: 6px"></i
-						></a>
+						<a href="./services.html" title="Services">
+							Services <i class="fa-solid fa-angle-down" style="margin-left: 6px"></i>
+						</a>
 						<div class="dropdown-content">
-							<a class="dropdown-link" href="./book-a-consulation.html">Book a Consultation</a>
-							<a class="dropdown-link" href="./team-list.html">Team List</a>
+							<a class="dropdown-link" href="./book-a-consulation.html" title="Book a Consultation">
+								Book a Consultation
+							</a>
+							<a class="dropdown-link" href="./team-list.html" title="Team List">Team List</a>
 						</div>
 					</div>
 					<div>
-						<a href="./blogs.html" class="nav-link">Blogs</a>
+						<a href="./blogs.html" class="nav-link" title="Blogs">Blogs</a>
 					</div>
-					<div><a href="./contact.html" class="nav-link">Contact</a></div>
 					<div>
-						<a href="./events.html" class="nav-link" style="border-color: #e22329; color: #e22329"
-							>Events</a
-						>
+						<a href="./contact.html" class="nav-link" title="Contact">Contact</a>
+					</div>
+					<div>
+						<a href="./events.html" class="nav-link" title="Events" style="border-color: #e22329; color: #e22329">Events</a>
 					</div>
 				</div>
 				<div class="nav-search">
-					<div class="search">
+					<div class="search" title="Search">
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</div>
-					<button class="btn">Get in Touch</button>
+					<button class="btn" onclick="document.location='./contact.html'" title="Contact us">
+						Get in Touch
+					</button>
 				</div>
 			</nav>
-			<!-- <div class="dividerV"></div> -->
 		</header>
+		
 		<main>
 			<section class="event-details">
 				<div class="partial-bg"></div>
@@ -89,12 +101,12 @@
 					<h1 class="h1" style="color: white; margin-bottom: 10px">What awaits work permit holders
             after TS2023?</h1>
 					
-					<span class="breadcrumb"
-						><a href="./index.html">Home</a> <i class="fa-solid fa-angle-right"></i>
-						<a href="./events.html">Events</a> <i class="fa-solid fa-angle-right"></i>
-						<a href="./event-details.html">Event Details</a></span
-					>
-          <img src="./src/assets/png/img1.png" alt="" style="margin: 80px auto" />
+					<span class="breadcrumb">
+						<a href="./index.html" title="Home">Home</a> <i class="fa-solid fa-angle-right"></i>
+						<a href="./events.html" title="Events">Events</a> <i class="fa-solid fa-angle-right"></i>
+						Event Details
+					</span>
+          <img src="./src/assets/png/img1.png" alt="cover image" style="margin: 80px auto" >
 					<h4 class="h4" style="text-align: left; margin-bottom: 20px;">Event Details</h4>
 					<p class="h8" style="text-align: left; font-weight: 400; margin-bottom: 60px;">Join us for an insightful discussion on the implications and possibilities awaiting work permit holders post-TS2023. As the landscape of immigration policies evolves, it's crucial to understand the potential opportunities and challenges that lie ahead. <br><br>
 
@@ -108,49 +120,41 @@
 						<div class="dividerV"></div>
 						<div class="blog-details-content-tags">
 							
-							<div
-								style="
-									display: flex;
-									gap: 16px;
-									color: #59667d;
-									align-items: center;
-									width: fit-content;
-									height: fit-content;
-									font-size: 20px;
-								"
-							>
-								<a href="https://twitter.com/" target="_blank"
-									><i class="fa-brands fa-twitter"></i></a
-								><a href="https://www.facebook.com/" target="_blank"
-									><i class="fa-brands fa-facebook-f"></i></a
-								><a href="https://www.linkedin.com/" target="_blank"
-									><i class="fa-brands fa-linkedin"></i></a
-								><a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<div style=" display: flex; gap: 16px; color: #59667d; align-items: center; width: fit-content; height: fit-content; font-size: 20px;">
+								<a href="https://twitter.com/" target="_blank" title="Share on Twitter">
+									<i class="fa-brands fa-twitter"></i>
+								</a>
+								<a href="https://www.facebook.com/" target="_blank" title="Share on Facebook">
+									<i class="fa-brands fa-facebook-f"></i>
+								</a>
+								<a href="https://www.linkedin.com/" target="_blank" title="Share on linkedin">
+									<i class="fa-brands fa-linkedin"></i>
+								</a>
+								<a href="#" target="_blank" title="Share"><i class="fa-solid fa-link"></i></a>
 							</div>
-							<button class="events-card-content-btn" style="margin-top: auto;">
+							<button class="events-card-content-btn myModalBtn" style="margin-top: auto;" title="Book Now">
 								BOOK NOW <i class="fa-solid fa-arrow-right"></i>
 							</button>
 						</div>
 						
-						<div class="dividerV"></div>
+						<div class="dividerV"></div></div>
 			</section>
 			<section class="missions-stats">
 				<h6 class="h6">Trusted by specialists all around the world</h6>
 				<div class="stats">
-					<div><img src="./src/assets/svg/vanfaba.svg" alt="" /></div>
-					<div><img src="./src/assets//svg//slack.svg" alt="" /></div>
-					<div><img src="./src/assets/svg//panadoxn.svg" alt="" /></div>
-					<div><img src="./src/assets//svg/shangx.svg" alt="" /></div>
-					<div><img src="./src/assets//svg/spotify.svg" alt="" /></div>
+					<div><img src="./src/assets/svg/vanfaba.svg" alt="vanfaba" ></div>
+					<div><img src="./src/assets//svg/slack.svg" alt="slack" ></div>
+					<div><img src="./src/assets/svg/panadoxn.svg" alt="panadoxn" ></div>
+					<div><img src="./src/assets//svg/shangx.svg" alt="shangx" ></div>
+					<div><img src="./src/assets//svg/spotify.svg" alt="spotify" ></div>
 				</div>
 			</section>
 			<section class="events-card">
 				<div class="events-card-content">
-					<h1
-						class="h3"
+					<h1 class="h3"
 						style="margin-bottom: 30px; color: #023a51; cursor: pointer"
 						onclick="document.location='./event-details.html'"
-					>
+						title="Event details">
 						What awaits work permit holders after TS2023?
 					</h1>
 					<p class="h8" style="margin-bottom: 30px; font-weight: 400">
@@ -160,20 +164,269 @@
 					</p>
 
 					<div class="tags h8" style="color: #023a51">
-						<span><img src="./src/assets/svg/calender.svg" alt="" /> 10th July, 2021</span
-						><span><img src="./src/assets/svg/location.svg" alt="" /> Google Meet</span>
+						<span><img src="./src/assets/svg/calender.svg" alt="icon" > 10th July, 2021</span>
+						<span><img src="./src/assets/svg/location.svg" alt="icon" > Google Meet</span>
 					</div>
-					<button class="events-card-content-btn">
+					<button class="events-card-content-btn myModalBtn" title="Book Now">
 						BOOK NOW <i class="fa-solid fa-arrow-right"></i>
 					</button>
 				</div>
 				<div class="events-card-img">
 					<div class="events-card-img-bg"></div>
-					<div class="events-card-img-top"><img src="./src/assets/png/event3.png" alt="" /></div>
+					<div class="events-card-img-top"><img src="./src/assets/png/event3.png" alt="event cover"></div>
+				</div>
+			</section>
+			<section id="myModal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<div style="display: flex; gap: 30px">
+						<div style="width: 50%">
+							<label class="h11" style="color: #023a51; margin-bottom: 6px">
+								First Name (As Per Passport)<span style="color: #e22329">*</span>
+							</label>
+							<input
+								class="h10"
+								style="width: 100%; padding: 7px 14px; color: #023a51"
+								type="text"
+								placeholder="Type Here"
+								title="Enter your first name" >
+						</div>
+						<div style="width: 50%">
+							<label class="h11" style="color: #023a51; margin-bottom: 6px">
+								Last Name (As Per Passport)<span style="color: #e22329">*</span>
+							</label>
+							<input
+								class="h10"
+								style="width: 100%; padding: 7px 14px; color: #023a51"
+								type="text"
+								placeholder="Type Here"
+								title="Enter your last name" >
+						</div>
+					</div>
+					<div style="display: flex; gap: 30px">
+						<div style="width: 50%">
+							<label class="h11" style="color: #023a51; margin-bottom: 6px">Country Code</label>
+							<input
+								class="h10"
+								style="width: 100%; padding: 7px 14px; color: #023a51"
+								type="text"
+								placeholder="Type Here"
+								title="Enter your country code">
+						</div>
+						<div style="width: 50%">
+							<label class="h11" style="color: #023a51; margin-bottom: 6px">WhatsApp number</label>
+							<input
+								class="h10"
+								style="width: 100%; padding: 7px 14px; color: #023a51"
+								type="text"
+								placeholder="Type Here"
+								title="Enter your whatsApp number">
+						</div>
+					</div>
+					<div style="width: 100%">
+						<label  class="h11" style="color: #023a51; margin-bottom: 6px">
+							Email Address<span style="color: #e22329">*</span>
+						</label>
+						<input
+							class="h10"
+							style="width: 100%; padding: 7px 14px; color: #023a51"
+							type="text"
+							placeholder="Type Here"
+							title="Enter your email address" >
+					</div>
+					<div style="width: 100%">
+						<label  class="h11" style="color: #023a51; margin-bottom: 6px">
+							Please share the main discussion points that will help us prepare for the meeting. If you
+							are not sure about the discussion, please write "N/A" in the box below.
+							<span style="color: #e22329">*</span>
+						</label>
+						<textarea
+							placeholder="Type Here"
+							class="h10"
+							style="width: 100%; padding: 7px 14px; color: #023a51; resize: none"
+							rows="5"
+							title="Write your discussion topic"></textarea>
+					</div>
+					<div style="display: flex; gap: 30px">
+						<div style="width: 50%">
+							<p class="h11" style="color: #023a51; margin-bottom: 6px">
+								Pick a date<span style="color: #e22329">*</span>
+							</p>
+							<img src="./src/assets/png/DatePicker.png" style="width: 100%" alt="date picker" title="pick a date">
+						</div>
+						<div style="width: 50%">
+							<p class="h11" style="color: #023a51; margin-bottom: 6px">
+								Pick a time<span style="color: #e22329">*</span>
+							</p>
+			
+							<div class="time-pick" title="Pick a time">
+								<div class="input-container">
+									<input id="1" type="radio" name="time-pick" value="1">
+									<label for="1"><span>8:15 am</span></label>
+								</div>
+								<div class="input-container">
+									<input id="2" type="radio" name="time-pick" value="2">
+									<label for="2"><span>9:15 am</span></label>
+								</div>
+								<div class="input-container">
+									<input id="3" type="radio" name="time-pick" value="3">
+									<label for="3"><span>10:15 am</span></label>
+								</div>
+								<div class="input-container">
+									<input id="4" type="radio" name="time-pick" value="4">
+									<label for="4"><span>11:15 am</span></label>
+								</div>
+								<div class="input-container">
+									<input id="5" type="radio" name="time-pick" value="5">
+									<label for="5"><span>12:15 pm</span></label>
+								</div>
+								<div class="input-container">
+									<input id="6" type="radio" name="time-pick" value="6">
+									<label for="6"><span>1:15 pm</span></label>
+								</div>
+								<div class="input-container">
+									<input id="7" type="radio" name="time-pick" value="7">
+									<label for="7"><span>2:15 pm</span></label>
+								</div>
+								<div class="input-container">
+									<input id="8" type="radio" name="time-pick" value="8">
+									<label for="8"><span>3:15 pm</span></label>
+								</div>
+								<div class="input-container">
+									<input id="9" type="radio" name="time-pick" value="9">
+									<label for="9"><span>4:15 pm</span></label>
+								</div>
+								<div class="input-container">
+									<input id="10" type="radio" name="time-pick" value="10">
+									<label for="10"><span>5:15 pm</span></label>
+								</div>
+								<div class="input-container">
+									<input id="11" type="radio" name="time-pick" value="11">
+									<label for="11"><span>6:15 pm</span></label>
+								</div>
+								<div class="input-container">
+									<input id="12" type="radio" name="time-pick" value="12">
+									<label for="12"><span>7:15 pm</span></label>
+								</div>
+								<div class="input-container">
+									<input id="13" type="radio" name="time-pick" value="13">
+									<label for="13"><span>8:15 pm</span></label>
+								</div>
+								<div class="input-container">
+									<input id="14" type="radio" name="time-pick" value="14">
+									<label for="14"><span>9:15 pm</span></label>
+								</div>
+								<div class="input-container">
+									<input id="15" type="radio" name="time-pick" value="15">
+									<label for="15"><span>10:15 pm</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="width: 100%">
+						<p class="h11" style="color: #023a51; margin-bottom: 6px">
+							Appointment booking for<span style="color: #e22329">*</span>
+						</p>
+						<div class="package-pick" title="Pick a package">
+							<div class="package-card">
+								<p class="h8" style="color: #023a51; margin-bottom: 12px">
+									30 mins session with RCIC-IRB
+								</p>
+								<p class="h10" style="color: #59667d; margin-bottom: 12px">
+									Applicable for any kind of Immigration related matters which are submitted to either
+									IRCC or
+								</p>
+								<div class="input-container">
+									<input id="100" type="radio" name="package-pick" value="100">
+									<label for="100"><span>PRICE: USD $60</span></label>
+								</div>
+							</div>
+							<div class="package-card">
+								<p class="h8" style="color: #023a51; margin-bottom: 12px">
+									30 mins session with RCIC-IRB
+								</p>
+								<p class="h10" style="color: #59667d; margin-bottom: 12px">
+									Applicable for any kind of Immigration related matters which are submitted to either
+									IRCC or
+								</p>
+								<div class="input-container">
+									<input id="101" type="radio" name="package-pick" value="101">
+									<label for="101"><span>PRICE: USD $60</span></label>
+								</div>
+							</div>
+							<div class="package-card">
+								<p class="h8" style="color: #023a51; margin-bottom: 12px">
+									30 mins session with RCIC-IRB
+								</p>
+								<p class="h10" style="color: #59667d; margin-bottom: 12px">
+									Applicable for any kind of Immigration related matters which are submitted to either
+									IRCC or
+								</p>
+								<div class="input-container">
+									<input id="102" type="radio" name="package-pick" value="102">
+									<label for="102"><span>PRICE: USD $60</span></label>
+								</div>
+							</div>
+							<div class="package-card">
+								<p class="h8" style="color: #023a51; margin-bottom: 12px">
+									30 mins session with RCIC-IRB
+								</p>
+								<p class="h10" style="color: #59667d; margin-bottom: 12px">
+									Applicable for any kind of Immigration related matters which are submitted to either
+									IRCC or
+								</p>
+								<div class="input-container">
+									<input id="103" type="radio" name="package-pick" value="103">
+									<label for="103"><span>PRICE: USD $60</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="width: 100%; position: relative">
+						<input
+							class="h10"
+							style="width: 100%; padding: 7px 40px; color: #023a51"
+							type="text"
+							placeholder="Card Number" 
+							title="Enter your Card number">
+						<i class="fa-regular fa-credit-card" style="position: absolute; left: 10px; top: 9px; color: #59667d"></i>
+						<p class="h10" style="position: absolute; right: 10px; top: 7px; color: #59667d">
+							MM/ YY CVC
+						</p>
+					</div>
+					<div style="width: 100%; color: #59667d; margin-bottom: 20px" class="h10">
+						<input type="checkbox" title="Agree to the terms and conditions">
+						<label>I accept the terms and conditions</label>
+					</div>
+					<div class="dividerV"></div>
+					<div class="modal-btns">
+						<button class="close" style="color: white; background-color: #e22329" title="Confirm scheduling event">Schedule Event</button>
+						<button class="close" title="Cancel scheduling event">cancel</button>
+					</div>
 				</div>
 			</section>
 		</main>
 
 		<script src="./src/js/event-details.js"></script>
+		<script>
+			var modal = document.getElementById("myModal");
+			var btn1 = document.getElementsByClassName("myModalBtn")[0];
+			var btn2 = document.getElementsByClassName("myModalBtn")[1];
+			var submit = document.getElementsByClassName("close")[0];
+			var cancel = document.getElementsByClassName("close")[1];
+		
+			btn1.onclick = function () {
+				modal.style.display = "block";
+			};
+			btn2.onclick = function () {
+				modal.style.display = "block";
+			};
+			submit.onclick = function () {
+				modal.style.display = "none";
+			};
+			cancel.onclick = function () {
+				modal.style.display = "none";
+			};
+		</script>
 	</body>
 </html>
