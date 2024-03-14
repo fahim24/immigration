@@ -4,6 +4,10 @@
 		@include container-sm;
 		padding: 80px 0;
 		text-align: center;
+		&-half{
+			width: 75%;
+			margin: auto;
+		}
 	}
 
 	&-content {
@@ -13,15 +17,16 @@
 		grid-template-columns: repeat(2, 1fr);
 
 		&-form {
-			@include flex(column, center, flex-start, 30px);
+			order: 1;
+			@include flex(column, center, flex-start, 2rem);
 			padding: 100px 50px 100px 100px;
 			// background-color: $primary-8;
 			form {
-				@include flex(column, center, center, 20px);
+				@include flex(column, center, center, 1.25rem);
 				width: 100%;
 				input,
 				textarea {
-					padding: 12px 18px;
+					padding: 0.75rem 1.125rem;
 					width: 100%;
 					border: none;
 				}
@@ -29,10 +34,8 @@
 					resize: none;
 				}
 				.btn {
-					@include btn-primary;
+					@include btn-primary-ar;
 					width: 100%;
-					padding: 15px 30px;
-					@include flex(row, center, center, 10px);
 					&:hover {
 						opacity: 0.9;
 					}
@@ -40,6 +43,7 @@
 			}
 		}
 		img {
+			order:2;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
@@ -51,20 +55,20 @@
 		margin: 100px auto;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 30px;
+		gap: 2rem;
 		&-card {
-			@include flex(row, center, flex-start, 15px);
+			@include flex(row, center, flex-start, 1rem);
 			background-color: $primary-8;
-			padding: 45px;
+			padding: 2.75rem;
 			color: $primary;
 			.card-icon {
-				width: 50px;
-				height: 50px;
+				width: 3rem;
+				height: 3rem;
 				background-color: rgba(2, 58, 81, 0.16);
 				@include flex(row, center, center, 0px);
 				flex-shrink: 0;
 				color: inherit;
-				font-size: 20px;
+				font-size: 1.25rem;
 				font-weight: 600;
 			}
 		}
@@ -98,9 +102,49 @@
 			height: 100%;
 			&-content {
 				background-color: white;
-				padding: 50px;
-				width: 500px;
+				padding: 3rem;
+				width:500px;
 				height: fit-content;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px){
+	.contact-us{
+		&-top{
+			padding: 40px 10px;
+			&-half{
+				width: 100%;
+			}
+		}
+		&-content{
+			margin: 0 10px 40px;
+			grid-template-columns: 1fr;
+			&-form{
+				order:2;
+				padding: 20px;
+			}
+			img{
+				order:1;
+			}
+		}
+		&-cards{
+			margin: 40px 10px;
+			grid-template-columns: 1fr;
+		}
+	}
+	.map{
+		grid-template-columns: 1fr;
+		&-info {
+			grid-column: auto;
+			grid-row: auto; 
+			&-card{
+				width: 100%;
+				padding: 10px;
+				&-content{
+					width: 100%;
+				}
 			}
 		}
 	}

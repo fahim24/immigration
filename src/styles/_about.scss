@@ -61,20 +61,20 @@
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 			gap: 100px;
-			margin-bottom: 40px;
+			margin-bottom: 2.5rem;
 		}
 		&-content {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			gap: 30px;
+			gap: 2rem;
 			&-card {
-				@include flex(row, center, flex-start, 15px);
+				@include flex(row, center, flex-start, 1rem);
 				background-color: rgba(255, 255, 255, 0.06);
-				padding: 45px;
+				padding: 2.75rem;
 				color: white;
 				.card-icon {
-					width: 50px;
-					height: 50px;
+					width: 3rem;
+					height: 3rem;
 					background-color: rgba(255, 255, 255, 0.16);
 					@include flex(row, center, center, 0px);
 					flex-shrink: 0;
@@ -92,14 +92,18 @@
 	&-header {
 		color: black;
 		text-align: center;
+		&-half{
+			width: 50%;
+			margin: auto;
+		}
 	}
 	&-content {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 30px;
-		margin: 40px auto;
+		gap: 2rem;
+		margin: 2.5rem auto;
 		&-card {
-			padding: 20px;
+			padding: 1.25rem;
 			cursor: pointer;
 			background-color: $primary-8;
 			text-align: center;
@@ -107,9 +111,9 @@
 				width: 100%;
 			}
 			&-name {
-				@include font-styles($primary, 26px, normal, 600, 36px);
-				margin-top: 25px;
-				margin-bottom: 10px;
+				@include font-styles($primary, 1.625rem, normal, 600, 2.25rem);
+				margin-top: 1.5rem;
+				margin-bottom: 0.75rem;
 			}
 			&:hover {
 				.our-team-content-card-name {
@@ -120,12 +124,77 @@
 	}
 
 	&-btn {
-		@include btn-primary;
+		@include btn-primary-ar;
 		margin: auto;
-		padding: 15px 30px;
-		@include flex(row, center, center, 10px);
 		&:hover {
 			opacity: 0.9;
+		}
+	}
+}
+
+@media screen and (max-width: 600px){
+	.about-us{
+		&-content{
+			padding: 40px 10px;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.missions{
+		&-container{
+			grid-template-columns: 1fr;
+			gap: 40px;
+			padding: 10px;
+			.missions-img{
+				margin: auto;
+				width: 300px;
+				height:  300px;
+				&-bg{
+					width: 280px;
+					height: 280px;
+				}
+				&-top{
+					width: 280px;
+					height: 280px;
+					img{
+						width: 100%;
+						height: 100%;
+					}
+				}
+
+			}
+		}
+		&-stats {
+			margin: 40px 10px;
+			padding: 20px 10px;
+			.stats {
+				flex-wrap: wrap;
+				gap: 20px;
+			}
+		}
+	}
+	.why-us {
+		&-container{
+			padding: 40px 10px;
+			&-header{
+				grid-template-columns: 1fr;
+				gap: 40px;
+			}
+			&-content{
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+	.our-team{
+		margin: 40px 10px 0;
+		&-header {
+			&-half{
+				width: 100%;
+			}			
+		}
+		&-content {
+			grid-template-columns: 1fr;
 		}
 	}
 }

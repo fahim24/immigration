@@ -22,15 +22,15 @@
 				<div class="header-container">
 					<address class="header-contact">
 						<span class="h11" title="Call us">
-							<i class="fa-solid fa-mobile-screen-button" style="margin-right: 6px"></i> 
+							<i class="fa-solid fa-mobile-screen-button" style="margin-right: 0.5rem"></i> 
 							Phone: +47 5941 295
 						</span>
 						<span class="h11" title="Send a mail">
-							<i class="fa-regular fa-envelope" style="margin-right: 6px"></i> 
+							<i class="fa-regular fa-envelope" style="margin-right: 0.5rem"></i> 
 							Mail: swipe@mail.com
 						</span>
 						<span class="h11" title="Visit us">
-							<i class="fa-regular fa-map" style="margin-right: 6px"></i> 
+							<i class="fa-regular fa-map" style="margin-right: 0.5rem"></i> 
 							Find us: Road 20, Paris, France
 						</span>
 					</address>
@@ -51,19 +51,25 @@
 				</div>
 			</div>
 			<nav class="nav-container">
-				<a href="./index.html" title="Home">
-					<img src="./src/assets/svg/logo.svg" alt="logo" >
-				</a>
-				<div class="nav-items h9">
+				<div class="nav-logo">
+					<a href="./index.html" title="Home">
+						<img src="./src/assets/svg/logo.svg" alt="logo" >
+					</a>
+					<button class="nav-logo-menu" id="nav-menu-toggle"  title="Open Menu">
+						Menu
+					</button>
+				</div>
+				
+				<div class="nav-items h9" id="nav-menu-items">
 					<div>
-						<a class="nav-link" href="./index.html" title="Home">Home</a>
+						<a class="nav-link" href="./index.html" title="Home" >Home</a>
 					</div>
 					<div>
-						<a class="nav-link" href="./about.html" title="About">About</a>
+						<a class="nav-link" href="./about.html" title="About" >About</a>
 					</div>
 					<div class="dropdown">
-						<a href="./services.html" title="Services">
-							Services <i class="fa-solid fa-angle-down" style="margin-left: 6px"></i>
+						<a href="./services.html" title="Services" >
+							Services <i class="fa-solid fa-angle-down" style="margin-left: 0.5rem"></i>
 						</a>
 						<div class="dropdown-content">
 							<a class="dropdown-link" href="./book-a-consulation.html" title="Book a Consultation">
@@ -73,7 +79,7 @@
 						</div>
 					</div>
 					<div>
-						<a href="./blogs.html" class="nav-link" title="Blogs" style="border-color: #e22329; color: #e22329">Blogs</a>
+						<a href="./blogs.html" class="nav-link" title="Blogs"  style="border-color: #e22329; color: #e22329">Blogs</a>
 					</div>
 					<div>
 						<a href="./contact.html" class="nav-link" title="Contact">Contact</a>
@@ -82,7 +88,7 @@
 						<a href="./events.html" class="nav-link" title="Events">Events</a>
 					</div>
 				</div>
-				<div class="nav-search">
+				<div class="nav-search" id="nav-menu-serach">
 					<div class="search" title="Search">
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</div>
@@ -97,15 +103,15 @@
 			<section class="blog-details">
 				<div class="partial-bg"></div>
 				<div class="blog-details-content">
-					<p class="h10" style=" background-color: white; padding: 6px 16px; width: fit-content; margin-bottom: 10px;">
+					<p class="h10" style=" background-color: white; padding: 0.375rem 1rem; width: fit-content; margin-bottom: 0.625rem;">
 						Study in Canada
 					</p>
-					<h1 class="h1" style="color: white; margin-bottom: 20px">
+					<h1 class="h1" style="color: white; margin-bottom: 1.25rem">
 						Canada's International Student Policy
 					</h1>
-					<div style="display: flex; justify-content: space-between; align-items: center">
-						<p class="h9" style="color: white; display: flex; gap: 16px">
-							<span>2022/12/06 AT 4:13 AM</span> | <span>Admin</span> | <span>6 Min Read</span>
+					<div class="blog-details-content-time">
+						<p class="h9" style="color: white; display: flex; gap: 0.75rem">
+							<span>2022/12/06 AT 4:13 AM</span>|<span>Admin</span>|<span>6 Min Read</span>
 						</p>
 						<span class="breadcrumb" style="margin: 0">
 							<a href="./index.html" title="Home">Home</a> <i class="fa-solid fa-angle-right"></i>
@@ -113,10 +119,10 @@
 							Blog Details
 						</span>
 					</div>
-					<img src="./src/assets/png/img1.png" alt="cover image" style="margin: 80px auto; width: 100%" >
+					<img src="./src/assets/png/img1.png" alt="cover image" style="margin: 5rem auto; width: 100%" >
 
 					<div style="position: relative">
-						<div style=" position: absolute; display: flex; flex-direction: column; gap: 16px; left: -50px; color: #59667d; align-items: center; width: fit-content; height: fit-content; font-size: 22px;">
+						<div class="side-share">
 							<a href="https://twitter.com/" title="Share in Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
 							<a href="https://www.facebook.com/" title="Share in Facebook" target="_blank">
 								<i class="fa-brands fa-facebook-f"></i>
@@ -126,7 +132,7 @@
 							</a>
 							<a href="#" title="Share" target="_blank"><i class="fa-solid fa-link"></i></a>
 						</div>
-						<p class="h8" style="text-align: left; font-weight: 400; margin-bottom: 40px">
+						<p class="h8" style="text-align: left; font-weight: 400; margin-bottom: 2.5rem">
 							In sit amet ipsum a odio imperdiet placerat et ac dui. Vivamus suscipit ut erat quis
 							cursus. Nam quis mauris quis elit accumsan sollicitudin non sit amet odio. Vestibulum
 							et nulla ut eros consequat mollis vel in magna. <br ><br >
@@ -137,7 +143,7 @@
 							purus, lobortis eu aliquet at, ullamcorper.
 						</p>
 						<h4 class="h4">Manage your workspace.</h4>
-						<p class="h8" style="text-align: left; font-weight: 400; margin: 40px auto">
+						<p class="h8" style="text-align: left; font-weight: 400; margin: 2.5rem auto">
 							In sit amet ipsum a odio imperdiet placerat et ac dui. Vivamus suscipit ut erat quis
 							cursus. Nam quis mauris quis elit accumsan sollicitudin non sit amet odio. Vestibulum
 							et nulla ut eros consequat mollis vel in magna. <br ><br >
@@ -147,13 +153,13 @@
 							mollis, nisl risus maximus lectus, vitae faucibus lacus ante vel diam. Sed lectus
 							purus, lobortis eu aliquet at, ullamcorper.
 						</p>
-						<div style="padding: 40px 60px; background-color: rgba(2, 58, 81, 0.08); border-left: 4px solid #023a51; margin-bottom: 40px;">
+						<div style="padding: 2.5rem 3.75rem; background-color: rgba(2, 58, 81, 0.08); border-left: 4px solid #023a51; margin-bottom: 2.5rem;">
 							<q class="h8" style="color: #023a51">
 								urabitur varius eros rutrum consequat Mauris aewa sollicitudin enim condimentum
 								luctus enim justo non molestie nisl</q>
 						</div>
 						<h4 class="h4">Adjust the work/life balance.</h4>
-						<p class="h8" style="text-align: left; font-weight: 400; margin: 40px auto">
+						<p class="h8" style="text-align: left; font-weight: 400; margin: 2.5rem auto">
 							In sit amet ipsum a odio imperdiet placerat et ac dui. Vivamus suscipit ut erat quis
 							cursus. Nam quis mauris quis elit accumsan sollicitudin non sit amet odio. Vestibulum
 							et nulla ut eros consequat mollis vel in magna. <br ><br >
@@ -191,7 +197,7 @@
 							Vivamus mollis, est ut ornare hendrerit, turpis mauris eleifend nunc, a rhoncus felis
 							arcu cursus turpis.
 						</h4>
-						<p class="h8" style="text-align: left; font-weight: 400; margin: 40px auto">
+						<p class="h8" style="text-align: left; font-weight: 400; margin: 2.5rem auto">
 							In sit amet ipsum a odio imperdiet placerat et ac dui. Vivamus suscipit ut erat quis
 							cursus. Nam quis mauris quis elit accumsan sollicitudin non sit amet odio. Vestibulum
 							et nulla ut eros consequat mollis vel in magna. <br ><br >
@@ -203,17 +209,20 @@
 						</p>
 						<div class="dividerV"></div>
 						<div class="blog-details-content-tags">
-							<div>
-								<span class="h9" style="color: #59667d; font-weight: 600; margin-right: 16px">
-									Post Tags : </span>
-								<span class="h10" style="margin-right: 6px; background-color: rgba(89, 102, 125, 0.08);	padding: 6px 16px; color: #59667d;" title="Study in Canada">
-									Study in Canada
+							<div style="display: flex; gap: 0.75rem">
+								<span class="h9" style="color: #59667d; font-weight: 600; text-wrap: nowrap;">
+									Post Tags:
 								</span>
-								<span class="h10" style=" margin-right: 6px; background-color: rgba(89, 102, 125, 0.08); padding: 6px 16px; color: #59667d;" title="Immigration">
-									Immigration
-								</span>
+								<div style="display: flex; gap: 0.375rem; flex-wrap: wrap;">
+									<span class="h10" style="background-color: rgba(89, 102, 125, 0.08);	padding: 0.375rem 1rem; color: #59667d;" title="Study in Canada">
+										Study in Canada
+									</span>
+									<span class="h10" style="background-color: rgba(89, 102, 125, 0.08); padding: 0.375rem 1rem; color: #59667d;" title="Immigration">
+										Immigration
+									</span>
+								</div>
 							</div>
-							<div style="display: flex; gap: 16px; color: #59667d; align-items: center; width: fit-content; height: fit-content; font-size: 20px;">
+							<div style="display: flex; gap: 1rem; color: #59667d; align-items: center; width: fit-content; height: fit-content; font-size: 1.25rem;">
 								<a href="https://twitter.com/" title="Share on Twitter" target="_blank">
 									<i class="fa-brands fa-twitter"></i>
 								</a>
@@ -230,8 +239,8 @@
 					</div>
 				</div>
 				<section class="blogs-section">
-					<div class="blogs-section-header" style="display: flex; justify-content: space-between">
-						<h3 class="h3" style="color: #023a51; margin-top: 8px">RELATED BLOGS</h3>
+					<div class="blogs-section-header" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+						<h3 class="h3" style="color: #023a51; margin-top: 0.5rem">RELATED BLOGS</h3>
 
 						<div style="margin: auto 0">
 							<button class="testimonials-container-header-btn" onclick="document.location='./blogs.html'" title="Blogs">
@@ -297,5 +306,20 @@
 		</main>
 
 		<script src="./src/js/blog-details.js"></script>
+		<script>
+			const menuBtn = document.getElementById("nav-menu-toggle");
+			const menu = document.getElementById("nav-menu-items");
+			const serach = document.getElementById("nav-menu-serach");
+		
+			menuBtn.onclick = function() {
+				if (menu.style.display == "flex") {
+					menu.style.display = "none";
+					serach.style.display = "none";
+				} else {
+					menu.style.display = "flex";
+					serach.style.display = "flex";
+				}
+			};
+		</script>
 	</body>
 </html>

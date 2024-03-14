@@ -3,15 +3,15 @@
 		<div class="header-container">
 			<address class="header-contact">
 				<span class="h11" title="Call us">
-					<i class="fa-solid fa-mobile-screen-button" style="margin-right: 6px"></i> 
+					<i class="fa-solid fa-mobile-screen-button" style="margin-right: 0.5rem"></i> 
 					Phone: +47 5941 295
 				</span>
 				<span class="h11" title="Send a mail">
-					<i class="fa-regular fa-envelope" style="margin-right: 6px"></i> 
+					<i class="fa-regular fa-envelope" style="margin-right: 0.5rem"></i> 
 					Mail: swipe@mail.com
 				</span>
 				<span class="h11" title="Visit us">
-					<i class="fa-regular fa-map" style="margin-right: 6px"></i> 
+					<i class="fa-regular fa-map" style="margin-right: 0.5rem"></i> 
 					Find us: Road 20, Paris, France
 				</span>
 			</address>
@@ -32,10 +32,16 @@
 		</div>
 	</div>
 	<nav class="nav-container">
-		<a href="./index.html" title="Home">
-			<img src="./src/assets/svg/logo.svg" alt="logo" >
-		</a>
-		<div class="nav-items h9">
+		<div class="nav-logo">
+			<a href="./index.html" title="Home">
+				<img src="./src/assets/svg/logo.svg" alt="logo" >
+			</a>
+			<button class="nav-logo-menu" id="nav-menu-toggle"  title="Open Menu">
+				Menu
+			</button>
+		</div>
+		
+		<div class="nav-items h9" id="nav-menu-items">
 			<div>
 				<a class="nav-link" href="./index.html" title="Home">Home</a>
 			</div>
@@ -44,7 +50,7 @@
 			</div>
 			<div class="dropdown">
 				<a href="./services.html" title="Services">
-					Services <i class="fa-solid fa-angle-down" style="margin-left: 6px"></i>
+					Services <i class="fa-solid fa-angle-down" style="margin-left: 0.5rem"></i>
 				</a>
 				<div class="dropdown-content">
 					<a class="dropdown-link" href="./book-a-consulation.html" title="Book a Consultation">
@@ -63,7 +69,7 @@
 				<a href="./events.html" class="nav-link" title="Events">Events</a>
 			</div>
 		</div>
-		<div class="nav-search">
+		<div class="nav-search" id="nav-menu-serach">
 			<div class="search" title="Search">
 				<i class="fa-solid fa-magnifying-glass"></i>
 			</div>
@@ -76,3 +82,20 @@
 </header>
 
 <!-- style="border-color: #e22329; color: #e22329" -->
+
+<!-- <script>
+	const btn = document.getElementById("nav-menu-toggle");
+	const menu = document.getElementById("nav-menu-items");
+	const serach = document.getElementById("nav-menu-serach");
+
+	btn.onclick = function() {
+		console.log("clicked");
+		if (menu.style.display == "flex") {
+			menu.style.display = "none";
+			serach.style.display = "none";
+		} else {
+			menu.style.display = "flex";
+			serach.style.display = "flex";
+		}
+	};
+</script> -->

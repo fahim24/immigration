@@ -22,15 +22,15 @@
 				<div class="header-container">
 					<address class="header-contact">
 						<span class="h11" title="Call us">
-							<i class="fa-solid fa-mobile-screen-button" style="margin-right: 6px"></i> 
+							<i class="fa-solid fa-mobile-screen-button" style="margin-right: 0.5rem"></i> 
 							Phone: +47 5941 295
 						</span>
 						<span class="h11" title="Send a mail">
-							<i class="fa-regular fa-envelope" style="margin-right: 6px"></i> 
+							<i class="fa-regular fa-envelope" style="margin-right: 0.5rem"></i> 
 							Mail: swipe@mail.com
 						</span>
 						<span class="h11" title="Visit us">
-							<i class="fa-regular fa-map" style="margin-right: 6px"></i> 
+							<i class="fa-regular fa-map" style="margin-right: 0.5rem"></i> 
 							Find us: Road 20, Paris, France
 						</span>
 					</address>
@@ -51,20 +51,27 @@
 				</div>
 			</div>
 			<nav class="nav-container">
-				<a href="./index.html" title="Home">
-					<img src="./src/assets/svg/logo.svg" alt="logo" >
-				</a>
-				<div class="nav-items h9">
+				<div class="nav-logo">
+					<a href="./index.html" title="Home">
+						<img src="./src/assets/svg/logo.svg" alt="logo" >
+					</a>
+					<button class="nav-logo-menu" id="nav-menu-toggle"  title="Open Menu">
+						Menu
+					</button>
+				</div>
+				
+				<div class="nav-items h9" id="nav-menu-items">
 					<div>
-						<a class="nav-link" href="./index.html" title="Home">Home</a>
+						<a class="nav-link" href="./index.html" title="Home" >Home</a>
 					</div>
 					<div>
 						<a class="nav-link" href="./about.html" title="About" style="border-color: #e22329; color: #e22329">About</a>
 					</div>
 					<div class="dropdown">
 						<a href="./services.html" title="Services">
-							Services <i class="fa-solid fa-angle-down" style="margin-left: 6px"></i>
+							Services <i class="fa-solid fa-angle-down" style="margin-left: 0.5rem"></i>
 						</a>
+						<span></span>
 						<div class="dropdown-content">
 							<a class="dropdown-link" href="./book-a-consulation.html" title="Book a Consultation">
 								Book a Consultation
@@ -82,7 +89,7 @@
 						<a href="./events.html" class="nav-link" title="Events">Events</a>
 					</div>
 				</div>
-				<div class="nav-search">
+				<div class="nav-search" id="nav-menu-serach">
 					<div class="search" title="Search">
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</div>
@@ -106,7 +113,7 @@
 						<a href="./index.html" title="Home">Home</a> 
 						<i class="fa-solid fa-angle-right"></i> About
 					</span>
-					<img src="./src/assets/png/img1.png" alt="cover image" style="margin: 80px auto" >
+					<img src="./src/assets/png/img1.png" alt="cover image" style="margin: 5rem auto" >
 					<h3 class="h3" style="color: #023a51; text-align: left; margin-bottom: 24px">
 						Overview<span style="color: #e22329">.</span>
 					</h3>
@@ -155,7 +162,7 @@
 				<div class="why-us-container">
 					<div class="why-us-container-header">
 						<div>
-							<p class="h10" style="color: white; margin-bottom: 8px">WHY CHOOSE US</p>
+							<p class="h10" style="color: white; margin-bottom: 0.5rem">WHY CHOOSE US</p>
 							<h3 class="h3">Reasons to choose our lending specialists</h3>
 						</div>
 						<p class="h8" style="color: white; font-weight: 400; margin: auto">
@@ -169,7 +176,7 @@
 							<span class="h9 card-icon"><i class="fa-solid fa-hourglass-half"></i></span>
 							<div>
 								<p class="h7">Speed</p>
-								<p class="h10" style="color: inherit; margin-top: 15px">
+								<p class="h10" style="color: inherit; margin-top: 1rem">
 									Swift approvals ensuring your business stays ahead in crucial decisions.
 								</p>
 							</div>
@@ -178,7 +185,7 @@
 							<span class="h9 card-icon"><i class="fa-solid fa-credit-card"></i></span>
 							<div>
 								<p class="h7">Flexibility</p>
-								<p class="h10" style="color: inherit; margin-top: 15px">
+								<p class="h10" style="color: inherit; margin-top: 1rem">
 									Tailored solutions adapting seamlessly to your evolving business.
 								</p>
 							</div>
@@ -187,7 +194,7 @@
 							<span class="h9 card-icon"><i class="fa-solid fa-shield-heart fa-lg"></i></span>
 							<div>
 								<p class="h7">Confidence</p>
-								<p class="h10" style="color: inherit; margin-top: 15px">
+								<p class="h10" style="color: inherit; margin-top: 1rem">
 									Reliable support fostering trust, providing assurance for your aspirations.
 								</p>
 							</div>
@@ -198,8 +205,8 @@
 			<section class="our-team">
 				<div class="our-team-header">
 					<p class="h10">TEAM MEMBERS</p>
-					<h3 class="h3" style="color: #023a51; margin-top: 15px">Get to know our amazing team</h3>
-					<p class="h8" style="font-weight: 400; margin-top: 12px; width: 50%; margin: auto">
+					<h3 class="h3" style="color: #023a51; margin-top: 1rem">Get to know our amazing team</h3>
+					<p class="h8 our-team-header-half" style="font-weight: 400; margin-top: 0.75rem;">
 						With a passion for innovation and a dedication to excellence, we bring diverse expertise
 						to every project we undertake.
 					</p>
@@ -210,14 +217,14 @@
 						<div>
 							<h6 class="our-team-content-card-name">Sara Grant</h6>
 							<p class="h9">Marketing Manager</p>
-							<div class="social-links" style="justify-content: center; margin-top: 20px; font-size: 14px; gap: 10px">
-								<a href="https://www.facebook.com/" class="social-link" style="height: 30px; width: 30px" title="Go to Facebook" target="_blank">
+							<div class="social-links" style="justify-content: center; margin-top: 1.25rem; font-size: 0.875rem; gap: 0.75rem">
+								<a href="https://www.facebook.com/" class="social-link" style="height: 2rem; width: 2rem" title="Go to Facebook" target="_blank">
 									<i class="fa-brands fa-facebook-f"></i>
 								</a>
-								<a href="https://twitter.com/?lang=en" class="social-link" style="height: 30px; width: 30px" title="Go to Twitter" target="_blank">
+								<a href="https://twitter.com/?lang=en" class="social-link" style="height: 2rem; width: 2rem" title="Go to Twitter" target="_blank">
 									<i class="fa-brands fa-x-twitter"></i>
 								</a>
-								<a href="https://www.instagram.com/" class="social-link" style="height: 30px; width: 30px" title="Go to Instagram" target="_blank">
+								<a href="https://www.instagram.com/" class="social-link" style="height: 2rem; width: 2rem" title="Go to Instagram" target="_blank">
 									<i class="fa-brands fa-square-instagram"></i>
 							</a>
 							</div>
@@ -228,14 +235,14 @@
 						<div>
 							<h6 class="our-team-content-card-name">Devon Lane</h6>
 							<p class="h9">President</p>
-							<div class="social-links" style="justify-content: center; margin-top: 20px; font-size: 14px; gap: 10px">
-								<a href="https://www.facebook.com/" class="social-link" style="height: 30px; width: 30px" title="Go to Facebook" target="_blank">
+							<div class="social-links" style="justify-content: center; margin-top: 1.25rem; font-size: 0.875rem; gap: 0.75rem">
+								<a href="https://www.facebook.com/" class="social-link" style="height: 2rem; width: 2rem" title="Go to Facebook" target="_blank">
 									<i class="fa-brands fa-facebook-f"></i>
 								</a>
-								<a href="https://twitter.com/?lang=en" class="social-link" style="height: 30px; width: 30px" title="Go to Twitter" target="_blank">
+								<a href="https://twitter.com/?lang=en" class="social-link" style="height: 2rem; width: 2rem" title="Go to Twitter" target="_blank">
 									<i class="fa-brands fa-x-twitter"></i>
 								</a>
-								<a href="https://www.instagram.com/" class="social-link" style="height: 30px; width: 30px" title="Go to Instagram" target="_blank">
+								<a href="https://www.instagram.com/" class="social-link" style="height: 2rem; width: 2rem" title="Go to Instagram" target="_blank">
 									<i class="fa-brands fa-square-instagram"></i>
 							</a>
 							</div>
@@ -246,14 +253,14 @@
 						<div>
 							<h6 class="our-team-content-card-name">Cameron Williamson</h6>
 							<p class="h9">QA Engineer</p>
-							<div class="social-links" style="justify-content: center; margin-top: 20px; font-size: 14px; gap: 10px">
-								<a href="https://www.facebook.com/" class="social-link" style="height: 30px; width: 30px" title="Go to Facebook" target="_blank">
+							<div class="social-links" style="justify-content: center; margin-top: 1.25rem; font-size: 0.875rem; gap: 0.75rem">
+								<a href="https://www.facebook.com/" class="social-link" style="height: 2rem; width: 2rem" title="Go to Facebook" target="_blank">
 									<i class="fa-brands fa-facebook-f"></i>
 								</a>
-								<a href="https://twitter.com/?lang=en" class="social-link" style="height: 30px; width: 30px" title="Go to Twitter" target="_blank">
+								<a href="https://twitter.com/?lang=en" class="social-link" style="height: 2rem; width: 2rem" title="Go to Twitter" target="_blank">
 									<i class="fa-brands fa-x-twitter"></i>
 								</a>
-								<a href="https://www.instagram.com/" class="social-link" style="height: 30px; width: 30px" title="Go to Instagram" target="_blank">
+								<a href="https://www.instagram.com/" class="social-link" style="height: 2rem; width: 2rem" title="Go to Instagram" target="_blank">
 									<i class="fa-brands fa-square-instagram"></i>
 							</a>
 							</div>
@@ -264,14 +271,14 @@
 						<div>
 							<h6 class="our-team-content-card-name">Esther Howard</h6>
 							<p class="h9">Customer Service Manager</p>
-							<div class="social-links" style="justify-content: center; margin-top: 20px; font-size: 14px; gap: 10px">
-								<a href="https://www.facebook.com/" class="social-link" style="height: 30px; width: 30px" title="Go to Facebook" target="_blank">
+							<div class="social-links" style="justify-content: center; margin-top: 1.25rem; font-size: 0.875rem; gap: 0.75rem">
+								<a href="https://www.facebook.com/" class="social-link" style="height: 2rem; width: 2rem" title="Go to Facebook" target="_blank">
 									<i class="fa-brands fa-facebook-f"></i>
 								</a>
-								<a href="https://twitter.com/?lang=en" class="social-link" style="height: 30px; width: 30px" title="Go to Twitter" target="_blank">
+								<a href="https://twitter.com/?lang=en" class="social-link" style="height: 2rem; width: 2rem" title="Go to Twitter" target="_blank">
 									<i class="fa-brands fa-x-twitter"></i>
 								</a>
-								<a href="https://www.instagram.com/" class="social-link" style="height: 30px; width: 30px" title="Go to Instagram" target="_blank">
+								<a href="https://www.instagram.com/" class="social-link" style="height: 2rem; width: 2rem" title="Go to Instagram" target="_blank">
 									<i class="fa-brands fa-square-instagram"></i>
 							</a>
 							</div>
@@ -282,14 +289,14 @@
 						<div>
 							<h6 class="our-team-content-card-name">Robert Fox</h6>
 							<p class="h9">Human Resource Manager</p>
-							<div class="social-links" style="justify-content: center; margin-top: 20px; font-size: 14px; gap: 10px">
-								<a href="https://www.facebook.com/" class="social-link" style="height: 30px; width: 30px" title="Go to Facebook" target="_blank">
+							<div class="social-links" style="justify-content: center; margin-top: 1.25rem; font-size: 0.875rem; gap: 0.75rem">
+								<a href="https://www.facebook.com/" class="social-link" style="height: 2rem; width: 2rem" title="Go to Facebook" target="_blank">
 									<i class="fa-brands fa-facebook-f"></i>
 								</a>
-								<a href="https://twitter.com/?lang=en" class="social-link" style="height: 30px; width: 30px" title="Go to Twitter" target="_blank">
+								<a href="https://twitter.com/?lang=en" class="social-link" style="height: 2rem; width: 2rem" title="Go to Twitter" target="_blank">
 									<i class="fa-brands fa-x-twitter"></i>
 								</a>
-								<a href="https://www.instagram.com/" class="social-link" style="height: 30px; width: 30px" title="Go to Instagram" target="_blank">
+								<a href="https://www.instagram.com/" class="social-link" style="height: 2rem; width: 2rem" title="Go to Instagram" target="_blank">
 									<i class="fa-brands fa-square-instagram"></i>
 							</a>
 							</div>
@@ -300,14 +307,14 @@
 						<div>
 							<h6 class="our-team-content-card-name">Darlene Robertson</h6>
 							<p class="h9">Chief Executive Officer</p>
-							<div class="social-links" style="justify-content: center; margin-top: 20px; font-size: 14px; gap: 10px">
-								<a href="https://www.facebook.com/" class="social-link" style="height: 30px; width: 30px" title="Go to Facebook" target="_blank">
+							<div class="social-links" style="justify-content: center; margin-top: 1.25rem; font-size: 0.875rem; gap: 0.75rem">
+								<a href="https://www.facebook.com/" class="social-link" style="height: 2rem; width: 2rem" title="Go to Facebook" target="_blank">
 									<i class="fa-brands fa-facebook-f"></i>
 								</a>
-								<a href="https://twitter.com/?lang=en" class="social-link" style="height: 30px; width: 30px" title="Go to Twitter" target="_blank">
+								<a href="https://twitter.com/?lang=en" class="social-link" style="height: 2rem; width: 2rem" title="Go to Twitter" target="_blank">
 									<i class="fa-brands fa-x-twitter"></i>
 								</a>
-								<a href="https://www.instagram.com/" class="social-link" style="height: 30px; width: 30px" title="Go to Instagram" target="_blank">
+								<a href="https://www.instagram.com/" class="social-link" style="height: 2rem; width: 2rem" title="Go to Instagram" target="_blank">
 									<i class="fa-brands fa-square-instagram"></i>
 							</a>
 							</div>
@@ -321,5 +328,20 @@
 		</main>
 
 		<script src="./src/js/about.js"></script>
+		<script>
+			const menuBtn = document.getElementById("nav-menu-toggle");
+			const menu = document.getElementById("nav-menu-items");
+			const serach = document.getElementById("nav-menu-serach");
+		
+			menuBtn.onclick = function() {
+				if (menu.style.display == "flex") {
+					menu.style.display = "none";
+					serach.style.display = "none";
+				} else {
+					menu.style.display = "flex";
+					serach.style.display = "flex";
+				}
+			};
+		</script>
 	</body>
 </html>

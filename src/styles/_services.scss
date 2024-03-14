@@ -4,6 +4,10 @@
 		@include container-sm;
 		padding: 100px 0;
 		text-align: center;
+		&-half{
+			width: 75%; 
+			margin: auto;
+		}
 	}
 }
 
@@ -12,18 +16,16 @@
 	margin: 100px auto;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 30px;
+	gap: 2rem;
 	&-card {
-		@include flex(column, center, flex-start, 30px);
+		@include flex(column, center, flex-start, 2rem);
 		background-color: $primary-8;
-		padding: 30px;
+		padding: 2rem;
 		img {
 			width: 100%;
 		}
 		&-btn {
-			@include btn-primary;
-			padding: 15px 30px;
-			@include flex(row, center, center, 10px);
+			@include btn-primary-ar;
 
 			&:hover {
 				opacity: 0.9;
@@ -38,29 +40,33 @@
 		@include container-sm;
 		padding-top: 100px;
 		text-align: center;
+		&-half{
+			width: 75%; 
+			margin: auto;
+		}
 		ul {
-			@include font-styles($gray, 18px, normal, 400, 30px);
+			@include font-styles($gray, 1.125rem, normal, 400, 1.875rem);
 			text-align: left;
-			margin-top: 20px;
+			margin-top: 1.25rem;
 			list-style: none;
 			li {
-				margin-bottom: 16px;
-				@include flex(row, flex-start, center, 16px);
+				margin-bottom: 1rem;
+				@include flex(row, flex-start, center, 1rem);
 				i {
 					color: $secondary;
-					font-size: 24px;
+					font-size: 1.5rem;
 				}
 			}
 		}
 		&-form {
-			margin-top: 40px;
+			margin-top: 2.5rem;
 			background-color: #023a51;
-			padding: 40px 50px;
-			@include flex(column, flex-start, flex-start, 20px);
+			padding: 40px ;
+			@include flex(column, flex-start, flex-start, 1.25rem);
 			width: 100%;
 			input,
 			textarea {
-				padding: 12px 18px;
+				padding: 0.75rem 1.125rem;
 				width: 100%;
 				background-color: white;
 				border: none;
@@ -69,7 +75,7 @@
 				resize: none;
 			}
 			.form-check {
-				@include flex(row, flex-start, center, 6px);
+				@include flex(row, flex-start, center, 0.5rem);
 				input {
 					width: fit-content;
 				}
@@ -78,10 +84,8 @@
 				}
 			}
 			.btn {
-				@include btn-primary;
+				@include btn-primary-ar;
 				width: 100%;
-				padding: 15px 30px;
-				@include flex(row, center, center, 10px);
 				&:hover {
 					opacity: 0.9;
 				}
@@ -94,9 +98,45 @@
 	@include container;
 	margin: 100px auto;
 	display: flex;
-	gap: 30px;
-	padding: 0 100px;
+	gap: 2rem;
 	&-img {
 		position: static;
 	}
+}
+
+@media screen and (max-width: 600px){
+	.services-top {
+		&-content {
+			padding: 40px 10px;
+			&-half{
+				width: 100%;
+			}
+		}
+	}	
+	.services{
+		margin: 40px 10px;
+		grid-template-columns: 1fr;
+	}
+	.service-details{
+		&-content{
+			padding: 40px 10px 0;
+			&-half{
+				width: 100%; 
+			}
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.team-details-content{
+		margin: 40px 10px;
+		display: block;
+		&-img {
+			margin-bottom: 20px;
+			img{
+				width: 100%;;
+			}
+		}
+	}
+
 }

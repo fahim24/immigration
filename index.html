@@ -52,10 +52,16 @@
 				</div>
 			</div>
 			<nav class="nav-container">
-				<a href="./index.html" title="Home">
-					<img src="./src/assets/svg/logo.svg" alt="logo" >
-				</a>
-				<div class="nav-items h9">
+				<div class="nav-logo">
+					<a href="./index.html" title="Home">
+						<img src="./src/assets/svg/logo.svg" alt="logo" >
+					</a>
+					<button class="nav-logo-menu" id="nav-menu-toggle"  title="Open Menu">
+						Menu
+					</button>
+				</div>
+				
+				<div class="nav-items h9" id="nav-menu-items">
 					<div>
 						<a class="nav-link" href="./index.html" title="Home" style="border-color: #e22329; color: #e22329">Home</a>
 					</div>
@@ -66,6 +72,7 @@
 						<a href="./services.html" title="Services">
 							Services <i class="fa-solid fa-angle-down" style="margin-left: 6px"></i>
 						</a>
+						<span></span>
 						<div class="dropdown-content">
 							<a class="dropdown-link" href="./book-a-consulation.html" title="Book a Consultation">
 								Book a Consultation
@@ -83,7 +90,7 @@
 						<a href="./events.html" class="nav-link" title="Events">Events</a>
 					</div>
 				</div>
-				<div class="nav-search">
+				<div class="nav-search" id="nav-menu-serach">
 					<div class="search" title="Search">
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</div>
@@ -94,18 +101,18 @@
 			</nav>
 			<div class="dividerV"></div>
 		</header>
-
+		
 		<main>
 			<section class="hero-section">
 				<div class="hero-section-img"><img src="./src/assets/png/top_img.png" alt="Top cover" ></div>
 				<div class="hero-section-content">
-					<p class="h10" style="margin-bottom: 10px">JOURNEY TO CANADA</p>
-					<h1 class="h1" style="margin-bottom: 16px">Canadian Immigration and Visa Services</h1>
-					<p class="h8" style="margin-bottom: 40px">
+					<p class="h10" style="margin-bottom: 0.625rem">JOURNEY TO CANADA</p>
+					<h1 class="h1" style="margin-bottom: 1rem">Canadian Immigration and Visa Services</h1>
+					<p class="h8" style="margin-bottom: 2.5rem">
 						Our corporation has offices located across Canada with experts focused solely on
 						Canadian immigration and citizenship law.
 					</p>
-					<button class="hero-section-content-btn myModalBtn" style="margin-bottom: 40px" title="Book Now">
+					<button class="hero-section-content-btn" style="margin-bottom: 2.5rem" title="Book a Consulation" onclick="document.location='./book-a-consulation.html'">
 						Book a Consultation <i class="fa-solid fa-arrow-right"></i>
 					</button>
 					<div class="tags h9">
@@ -119,11 +126,11 @@
 			<section class="about-section">
 				<div class="about-section-container">
 					<div class="about-section-content">
-						<p class="h10" style="margin-bottom: 15px">JOURNEY TO CANADA</p>
-						<h1 class="h3" style="margin-bottom: 30px; color: #023a51">
+						<p class="h10" style="margin-bottom: 1rem">JOURNEY TO CANADA</p>
+						<h1 class="h3" style="margin-bottom: 2rem; color: #023a51">
 							Welcome to Canadian Horizon
 						</h1>
-						<p class="h8" style="margin-bottom: 30px; font-weight: 400">
+						<p class="h8" style="margin-bottom: 2rem; font-weight: 400">
 							Our corporation has offices located across Canada with experts focused solely on
 							Canadian immigration and citizenship law. Our client-focused approach will guide you
 							through Canada's numerous immigration programs and customize your application.
@@ -158,254 +165,25 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<section id="myModal" class="modal">
-				<!-- Modal content -->
-				<div class="modal-content">
-					<div style="display: flex; gap: 30px">
-						<div style="width: 50%">
-							<label class="h11" style="color: #023a51; margin-bottom: 6px">
-								First Name (As Per Passport)<span style="color: #e22329">*</span>
-							</label>
-							<input
-								class="h10"
-								style="width: 100%; padding: 7px 14px; color: #023a51"
-								type="text"
-								placeholder="Type Here"
-								title="Enter your first name" >
-						</div>
-						<div style="width: 50%">
-							<label class="h11" style="color: #023a51; margin-bottom: 6px">
-								Last Name (As Per Passport)<span style="color: #e22329">*</span>
-							</label>
-							<input
-								class="h10"
-								style="width: 100%; padding: 7px 14px; color: #023a51"
-								type="text"
-								placeholder="Type Here"
-								title="Enter your last name" >
-						</div>
-					</div>
-					<div style="display: flex; gap: 30px">
-						<div style="width: 50%">
-							<label class="h11" style="color: #023a51; margin-bottom: 6px">Country Code</label>
-							<input
-								class="h10"
-								style="width: 100%; padding: 7px 14px; color: #023a51"
-								type="text"
-								placeholder="Type Here"
-								title="Enter your country code">
-						</div>
-						<div style="width: 50%">
-							<label class="h11" style="color: #023a51; margin-bottom: 6px">WhatsApp number</label>
-							<input
-								class="h10"
-								style="width: 100%; padding: 7px 14px; color: #023a51"
-								type="text"
-								placeholder="Type Here"
-								title="Enter your whatsApp number">
-						</div>
-					</div>
-					<div style="width: 100%">
-						<label  class="h11" style="color: #023a51; margin-bottom: 6px">
-							Email Address<span style="color: #e22329">*</span>
-						</label>
-						<input
-							class="h10"
-							style="width: 100%; padding: 7px 14px; color: #023a51"
-							type="text"
-							placeholder="Type Here"
-							title="Enter your email address" >
-					</div>
-					<div style="width: 100%">
-						<label  class="h11" style="color: #023a51; margin-bottom: 6px">
-							Please share the main discussion points that will help us prepare for the meeting. If you
-							are not sure about the discussion, please write "N/A" in the box below.
-							<span style="color: #e22329">*</span>
-						</label>
-						<textarea
-							placeholder="Type Here"
-							class="h10"
-							style="width: 100%; padding: 7px 14px; color: #023a51; resize: none"
-							rows="5"
-							title="Write your discussion topic"></textarea>
-					</div>
-					<div style="display: flex; gap: 30px">
-						<div style="width: 50%">
-							<p class="h11" style="color: #023a51; margin-bottom: 6px">
-								Pick a date<span style="color: #e22329">*</span>
-							</p>
-							<img src="./src/assets/png/DatePicker.png" style="width: 100%" alt="date picker" title="pick a date">
-						</div>
-						<div style="width: 50%">
-							<p class="h11" style="color: #023a51; margin-bottom: 6px">
-								Pick a time<span style="color: #e22329">*</span>
-							</p>
-			
-							<div class="time-pick" title="Pick a time">
-								<div class="input-container">
-									<input id="1" type="radio" name="time-pick" value="1">
-									<label for="1"><span>8:15 am</span></label>
-								</div>
-								<div class="input-container">
-									<input id="2" type="radio" name="time-pick" value="2">
-									<label for="2"><span>9:15 am</span></label>
-								</div>
-								<div class="input-container">
-									<input id="3" type="radio" name="time-pick" value="3">
-									<label for="3"><span>10:15 am</span></label>
-								</div>
-								<div class="input-container">
-									<input id="4" type="radio" name="time-pick" value="4">
-									<label for="4"><span>11:15 am</span></label>
-								</div>
-								<div class="input-container">
-									<input id="5" type="radio" name="time-pick" value="5">
-									<label for="5"><span>12:15 pm</span></label>
-								</div>
-								<div class="input-container">
-									<input id="6" type="radio" name="time-pick" value="6">
-									<label for="6"><span>1:15 pm</span></label>
-								</div>
-								<div class="input-container">
-									<input id="7" type="radio" name="time-pick" value="7">
-									<label for="7"><span>2:15 pm</span></label>
-								</div>
-								<div class="input-container">
-									<input id="8" type="radio" name="time-pick" value="8">
-									<label for="8"><span>3:15 pm</span></label>
-								</div>
-								<div class="input-container">
-									<input id="9" type="radio" name="time-pick" value="9">
-									<label for="9"><span>4:15 pm</span></label>
-								</div>
-								<div class="input-container">
-									<input id="10" type="radio" name="time-pick" value="10">
-									<label for="10"><span>5:15 pm</span></label>
-								</div>
-								<div class="input-container">
-									<input id="11" type="radio" name="time-pick" value="11">
-									<label for="11"><span>6:15 pm</span></label>
-								</div>
-								<div class="input-container">
-									<input id="12" type="radio" name="time-pick" value="12">
-									<label for="12"><span>7:15 pm</span></label>
-								</div>
-								<div class="input-container">
-									<input id="13" type="radio" name="time-pick" value="13">
-									<label for="13"><span>8:15 pm</span></label>
-								</div>
-								<div class="input-container">
-									<input id="14" type="radio" name="time-pick" value="14">
-									<label for="14"><span>9:15 pm</span></label>
-								</div>
-								<div class="input-container">
-									<input id="15" type="radio" name="time-pick" value="15">
-									<label for="15"><span>10:15 pm</span></label>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div style="width: 100%">
-						<p class="h11" style="color: #023a51; margin-bottom: 6px">
-							Appointment booking for<span style="color: #e22329">*</span>
-						</p>
-						<div class="package-pick" title="Pick a package">
-							<div class="package-card">
-								<p class="h8" style="color: #023a51; margin-bottom: 12px">
-									30 mins session with RCIC-IRB
-								</p>
-								<p class="h10" style="color: #59667d; margin-bottom: 12px">
-									Applicable for any kind of Immigration related matters which are submitted to either
-									IRCC or
-								</p>
-								<div class="input-container">
-									<input id="100" type="radio" name="package-pick" value="100">
-									<label for="100"><span>PRICE: USD $60</span></label>
-								</div>
-							</div>
-							<div class="package-card">
-								<p class="h8" style="color: #023a51; margin-bottom: 12px">
-									30 mins session with RCIC-IRB
-								</p>
-								<p class="h10" style="color: #59667d; margin-bottom: 12px">
-									Applicable for any kind of Immigration related matters which are submitted to either
-									IRCC or
-								</p>
-								<div class="input-container">
-									<input id="101" type="radio" name="package-pick" value="101">
-									<label for="101"><span>PRICE: USD $60</span></label>
-								</div>
-							</div>
-							<div class="package-card">
-								<p class="h8" style="color: #023a51; margin-bottom: 12px">
-									30 mins session with RCIC-IRB
-								</p>
-								<p class="h10" style="color: #59667d; margin-bottom: 12px">
-									Applicable for any kind of Immigration related matters which are submitted to either
-									IRCC or
-								</p>
-								<div class="input-container">
-									<input id="102" type="radio" name="package-pick" value="102">
-									<label for="102"><span>PRICE: USD $60</span></label>
-								</div>
-							</div>
-							<div class="package-card">
-								<p class="h8" style="color: #023a51; margin-bottom: 12px">
-									30 mins session with RCIC-IRB
-								</p>
-								<p class="h10" style="color: #59667d; margin-bottom: 12px">
-									Applicable for any kind of Immigration related matters which are submitted to either
-									IRCC or
-								</p>
-								<div class="input-container">
-									<input id="103" type="radio" name="package-pick" value="103">
-									<label for="103"><span>PRICE: USD $60</span></label>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div style="width: 100%; position: relative">
-						<input
-							class="h10"
-							style="width: 100%; padding: 7px 40px; color: #023a51"
-							type="text"
-							placeholder="Card Number" 
-							title="Enter your Card number">
-						<i class="fa-regular fa-credit-card" style="position: absolute; left: 10px; top: 9px; color: #59667d"></i>
-						<p class="h10" style="position: absolute; right: 10px; top: 7px; color: #59667d">
-							MM/ YY CVC
-						</p>
-					</div>
-					<div style="width: 100%; color: #59667d; margin-bottom: 20px" class="h10">
-						<input type="checkbox" title="Agree to the terms and conditions">
-						<label>I accept the terms and conditions</label>
-					</div>
-					<div class="dividerV"></div>
-					<div class="modal-btns">
-						<button class="close" style="color: white; background-color: #e22329" title="Confirm scheduling event">Schedule Event</button>
-						<button class="close" title="Cancel scheduling event">cancel</button>
-					</div>
-				</div>
-			</section>
+			</section>		
 						
 		</main>
 		<script src="./src/js/index.js"></script>
 		<script>
-			var modal = document.getElementById("myModal");
-			var btn = document.getElementsByClassName("myModalBtn")[0];
-			var submit = document.getElementsByClassName("close")[0];
-			var cancel = document.getElementsByClassName("close")[1];
+			const menuBtn = document.getElementById("nav-menu-toggle");
+			const menu = document.getElementById("nav-menu-items");
+			const serach = document.getElementById("nav-menu-serach");
 		
-			btn.onclick = function () {
-				modal.style.display = "block";
-			};
-			submit.onclick = function () {
-				modal.style.display = "none";
-			};
-			cancel.onclick = function () {
-				modal.style.display = "none";
+			menuBtn.onclick = function() {
+				if (menu.style.display == "flex") {
+					menu.style.display = "none";
+					serach.style.display = "none";
+				} else {
+					menu.style.display = "flex";
+					serach.style.display = "flex";
+				}
 			};
 		</script>
+		
 	</body>
 </html>

@@ -4,6 +4,10 @@
 		@include container-sm;
 		padding: 100px 0;
 		text-align: center;
+		&-half{
+			width: 75%; 
+			margin: auto;
+		}
 	}
 }
 
@@ -58,4 +62,15 @@
 		padding-top: 100px;
 		text-align: center;
 	}
+}
+
+@media screen and (max-width: 600px){
+	.events-top{
+		&-content{
+			padding: 40px 10px;
+			&-half{
+				width: 100%;
+			}
+		}
+	}	
 }

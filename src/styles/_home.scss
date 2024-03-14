@@ -6,9 +6,7 @@
 		width: 50%;
 		padding: 100px 30px 100px 0;
 		&-btn {
-			@include btn-primary;
-			padding: 15px 30px;
-			@include flex(row, center, center, 10px);
+			@include btn-primary-ar;
 			&:hover {
 				opacity: 0.9;
 			}
@@ -28,9 +26,9 @@
 }
 
 .tags {
-	@include flex(row, start, center, 24px);
+	@include flex(row, start, center, 1.5rem);
 	span {
-		@include flex(row, center, center, 10px);
+		@include flex(row, center, center, 0.625rem);
 	}
 }
 
@@ -46,18 +44,18 @@
 		gap: 2px;
 		.service {
 			background-color: rgba(255, 255, 255, 0.06);
-			padding: 45px;
+			padding: 2.75rem;
 			&-img {
 				display: none;
 				height: 100%;
 				width: 40%;
 			}
 			&-card {
-				@include flex(column, flex-start, flex-start, 15px);
+				@include flex(column, flex-start, flex-start, 1rem);
 				color: white;
 				&-btn {
 					@include btn-basic;
-					@include flex(row, flex-start, center, 10px);
+					@include flex(row, flex-start, center, 0.75rem);
 				}
 			}
 			&:hover {
@@ -68,7 +66,7 @@
 					display: block;
 				}
 				.service-card {
-					padding: 20px;
+					padding: 1.25rem;
 					color: $primary;
 					p {
 						color: $primary;
@@ -94,9 +92,7 @@
 		.about-section-content {
 			margin: auto auto;
 			&-btn {
-				@include btn-primary;
-				padding: 15px 30px;
-				@include flex(row, center, center, 10px);
+				@include btn-primary-ar;
 				&:hover {
 					opacity: 0.9;
 				}
@@ -144,7 +140,7 @@
 		&-header {
 			display: grid;
 			grid-template-columns: 500px auto;
-			gap: 50px;
+			gap: 3rem;
 			margin-bottom: 40px;
 		}
 		&-content {
@@ -152,13 +148,13 @@
 			grid-template-columns: repeat(3, 1fr);
 			gap: 2px;
 			&-card {
-				@include flex(column, center, flex-start, 15px);
+				@include flex(column, center, flex-start, 1rem);
 				background-color: rgba(255, 255, 255, 0.06);
-				padding: 45px;
+				padding: 2.75rem;
 				color: white;
 				.card-no {
-					width: 50px;
-					height: 50px;
+					width: 3rem;
+					height: 3rem;
 					background-color: rgba(255, 255, 255, 0.16);
 					@include flex(row, center, center, 0px);
 					color: inherit;
@@ -166,12 +162,13 @@
 				}
 				&-btn {
 					@include btn-basic;
-					@include flex(row, flex-start, center, 10px);
+					@include flex(row, flex-start, center, 0.75rem);
 				}
 			}
 		}
 	}
 }
+
 .testimonials {
 	margin: 100px;
 	background-color: $primary-8;
@@ -181,12 +178,10 @@
 		&-header {
 			display: grid;
 			grid-template-columns: 1fr 1fr auto;
-			gap: 50px;
-			margin-bottom: 40px;
+			gap: 3rem;
+			margin-bottom: 2.5rem;
 			&-btn {
-				@include btn-primary;
-				padding: 15px 30px;
-				@include flex(row, center, center, 10px);
+				@include btn-primary-ar;
 				&:hover {
 					opacity: 0.9;
 				}
@@ -195,12 +190,12 @@
 		&-content {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			gap: 30px;
+			gap: 2rem;
 			&-card {
 				background-color: white;
-				padding: 30px;
+				padding: 2rem;
 				&-profile {
-					margin-top: 30px;
+					margin-top: 2rem;
 					@include flex(row, space-between, center);
 				}
 			}
@@ -214,12 +209,10 @@
 	&-header {
 		display: grid;
 		grid-template-columns: 1fr 1fr auto;
-		gap: 50px;
-		margin-bottom: 40px;
+		gap: 3rem;
+		margin-bottom: 2.5rem;
 		&-btn {
-			@include btn-primary;
-			padding: 15px 30px;
-			@include flex(row, center, center, 10px);
+			@include btn-primary-ar;
 			&:hover {
 				opacity: 0.9;
 			}
@@ -228,20 +221,18 @@
 	&-content {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 30px;
+		gap: 2rem;
 		&-card {
 			background-color: $primary-8;
-			padding: 30px;
-			@include flex(column, center, flex-start, 24px);
+			padding: 2rem;
+			@include flex(column, center, flex-start, 1.5rem);
 			img {
 				width: 100%;
 			}
 			&-btn {
-				@include btn-primary;
+				@include btn-primary-ar;
 				background-color: white;
 				color: $primary;
-				padding: 15px 30px;
-				@include flex(row, center, center, 10px);
 				&:hover {
 					opacity: 0.9;
 				}
@@ -256,35 +247,35 @@
 		@include container;
 		display: grid;
 		grid-template-columns: auto 700px;
-		gap: 80px;
+		gap: 5rem;
 		padding: 80px 0;
 		&-content {
-			@include flex(column, center, flex-start, 45px);
+			@include flex(column, center, flex-start, 2.75rem);
 			margin: auto;
 			&-header {
-				@include flex(column, center, flex-start, 8px);
+				@include flex(column, center, flex-start, 0.5rem);
 			}
 			&-cards {
-				@include flex(column, center, flex-start, 30px);
+				@include flex(column, center, flex-start, 2rem);
 				width: 100%;
 				&-card {
 					background-color: rgba(255, 255, 255, 0.06);
 					width: 100%;
-					padding: 30px;
-					@include flex(column, center, flex-start, 15px);
+					padding: 2rem;
+					@include flex(column, center, flex-start, 1rem);
 				}
 			}
 		}
 		&-form {
 			background-color: white;
-			padding: 40px 50px;
+			padding: 2.5rem;
 			@include flex(column, flex-start, flex-start, 35px);
 			form {
 				@include flex(column, flex-start, flex-start, 20px);
 				width: 100%;
 				input,
 				textarea {
-					padding: 12px 18px;
+					padding: 0.75rem 1.125rem;
 					width: 100%;
 					background-color: #f6f6f4;
 					border: none;
@@ -302,15 +293,109 @@
 					}
 				}
 				.btn {
-					@include btn-primary;
+					@include btn-primary-ar;
 					width: 100%;
-					padding: 15px 30px;
-					@include flex(row, center, center, 10px);
 					&:hover {
 						opacity: 0.9;
 					}
 				}
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px){
+	.hero-section{
+		&-content{
+			width: 100%;
+			padding: 40px 10px;
+		}
+		&-img{
+			position: static;
+			height: fit-content;
+		}
+	}
+	.service-section {
+		&-container {
+			padding: 40px 10px;
+		}
+		.services-container{
+			grid-template-columns: 1fr;
+			
+			
+		}
+	}
+	.about-section{
+		margin: 40px 0;
+		&-container{
+			grid-template-columns: 1fr;
+			padding: 40px 10px;
+			gap: 40px;
+			.about-section-img{
+				margin: auto;
+				height: 300px;
+				width: 300px;
+				&-bg{
+					height: 280px;
+					width: 280px
+				}
+				&-top{
+					height: 280px;
+					width: 280px;
+					img{
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+		&-stats {
+			margin: 40px 10px;
+			padding: 40px 20px;
+			.stats {
+				gap: 10px;
+				flex-direction: column;
+			}
+		}
+	}
+	.process-section {
+		margin: 40px 0;
+		padding: 40px 10px;
+		&-content{
+			&-header{
+				grid-template-columns: 1fr;
+			}
+			&-content{
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+	.testimonials{
+		margin: 40px 10px;
+		padding: 20px;
+		&-container {
+			&-header{
+				grid-template-columns: 1fr;
+			}
+			&-content{
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+	.blogs-section{
+		margin: 40px 10px;
+		&-header{
+			grid-template-columns: 1fr;
+		}
+		&-content {
+			grid-template-columns: 1fr;
+		}
+	}
+	.contacts{
+		&-container{
+			grid-template-columns: 1fr;
+			padding: 40px 10px;
+		
 		}
 	}
 }

@@ -23,15 +23,15 @@
 				<div class="header-container">
 					<address class="header-contact">
 						<span class="h11" title="Call us">
-							<i class="fa-solid fa-mobile-screen-button" style="margin-right: 6px"></i> 
+							<i class="fa-solid fa-mobile-screen-button" style="margin-right: 0.5rem"></i> 
 							Phone: +47 5941 295
 						</span>
 						<span class="h11" title="Send a mail">
-							<i class="fa-regular fa-envelope" style="margin-right: 6px"></i> 
+							<i class="fa-regular fa-envelope" style="margin-right: 0.5rem"></i> 
 							Mail: swipe@mail.com
 						</span>
 						<span class="h11" title="Visit us">
-							<i class="fa-regular fa-map" style="margin-right: 6px"></i> 
+							<i class="fa-regular fa-map" style="margin-right: 0.5rem"></i> 
 							Find us: Road 20, Paris, France
 						</span>
 					</address>
@@ -52,20 +52,27 @@
 				</div>
 			</div>
 			<nav class="nav-container">
-				<a href="./index.html" title="Home">
-					<img src="./src/assets/svg/logo.svg" alt="logo" >
-				</a>
-				<div class="nav-items h9">
+				<div class="nav-logo">
+					<a href="./index.html" title="Home">
+						<img src="./src/assets/svg/logo.svg" alt="logo" >
+					</a>
+					<button class="nav-logo-menu" id="nav-menu-toggle"  title="Open Menu">
+						Menu
+					</button>
+				</div>
+				
+				<div class="nav-items h9" id="nav-menu-items">
 					<div>
-						<a class="nav-link" href="./index.html" title="Home">Home</a>
+						<a class="nav-link" href="./index.html" title="Home" >Home</a>
 					</div>
 					<div>
-						<a class="nav-link" href="./about.html" title="About">About</a>
+						<a class="nav-link" href="./about.html" title="About" >About</a>
 					</div>
 					<div class="dropdown">
-						<a href="./services.html" title="Services">
-							Services <i class="fa-solid fa-angle-down" style="margin-left: 6px"></i>
+						<a href="./services.html" title="Services" >
+							Services <i class="fa-solid fa-angle-down" style="margin-left: 0.5rem"></i>
 						</a>
+						<span></span>
 						<div class="dropdown-content">
 							<a class="dropdown-link" href="./book-a-consulation.html" title="Book a Consultation">
 								Book a Consultation
@@ -83,7 +90,7 @@
 						<a href="./events.html" class="nav-link" title="Events">Events</a>
 					</div>
 				</div>
-				<div class="nav-search">
+				<div class="nav-search" id="nav-menu-serach">
 					<div class="search" title="Search">
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</div>
@@ -98,8 +105,8 @@
 			<section class="contact-us">
 				<div class="partial-bg"></div>
 				<div class="contact-us-top">
-					<h1 class="h1" style="color: white; margin-bottom: 10px">Let's keep in touch</h1>
-					<p class="h8" style="color: white; font-weight: 400; width: 75%; margin: auto">
+					<h1 class="h1" style="color: white; margin-bottom: 0.75rem">Let's keep in touch</h1>
+					<p class="h8 contact-us-top-half" style="color: white; font-weight: 400; ">
 						Feel free to reach out to us using the options below, and our dedicated team will
 						respond to your inquiries promptly.
 					</p>
@@ -112,8 +119,8 @@
 					<div class="contact-us-content-form">
 						<div>
 							<p class="h10">CONTACT US</p>
-							<h5 class="h5" style="text-align: left; margin-top: 15px">How can we help?</h5>
-							<p class="h9" style="color: #59667d; margin-top: 6px">
+							<h5 class="h5" style="text-align: left; margin-top: 1rem">How can we help?</h5>
+							<p class="h9" style="color: #59667d; margin-top: 0.5rem">
 								Have a question or feedback? Fill out the form below, and we'll get back to you as
 								soon as possible.
 							</p>
@@ -126,14 +133,14 @@
 							<button class="btn" title="Submit form" disabled>SUBMIT <i class="fa-solid fa-arrow-right"></i></button>
 						</form>
 					</div>
-					<div><img src="./src/assets/png/img1.png" alt="cover image" ></div>
+					<img src="./src/assets/png/img1.png" alt="cover image" >
 				</div>
 				<div class="contact-us-cards">
 					<div class="contact-us-cards-card">
 						<span class="card-icon"><i class="fa-solid fa-envelope"></i></span>
 						<div>
 							<p class="h7" style="color: inherit">Fast onboarding</p>
-							<p class="h10" style="color: inherit; margin-top: 15px">
+							<p class="h10" style="color: inherit; margin-top: 1rem">
 								Seamless initiation into our system for swift financial assistance.
 							</p>
 						</div>
@@ -142,7 +149,7 @@
 						<span class="card-icon"><i class="fa-solid fa-phone-volume"></i></span>
 						<div>
 							<p class="h7" style="color: inherit">Expert support</p>
-							<p class="h10" style="color: inherit; margin-top: 15px">
+							<p class="h10" style="color: inherit; margin-top: 1rem">
 								Guidance from industry professionals tailored to your business needs.
 							</p>
 						</div>
@@ -151,7 +158,7 @@
 						<span class="card-icon"><i class="fa-solid fa-comments"></i></span>
 						<div>
 							<p class="h7" style="color: inherit">Consulting partners</p>
-							<p class="h10" style="color: inherit; margin-top: 15px">
+							<p class="h10" style="color: inherit; margin-top: 1rem">
 								Collaboration with experienced advisors for strategic financial planning.
 							</p>
 						</div>
@@ -163,8 +170,7 @@
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29219.715836787986!2d90.38572846578053!3d23.730810571804287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8c780d8921d%3A0x548a98b9b05efa42!2sM4YOURS%20IT!5e0!3m2!1sen!2sbd!4v1709871774132!5m2!1sen!2sbd"
 					class="map-container"
 					width="100%"
-					height="800"
-					style="border: 0; mix-blend-mode: luminosity"
+					style="border: 0; mix-blend-mode: luminosity; height: 50rem;"
 					allowfullscreen=""
 					loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade"
@@ -201,5 +207,20 @@
 			</section>
 		</main>
 		<script src="./src/js/contact.js"></script>
+		<script>
+			const menuBtn = document.getElementById("nav-menu-toggle");
+			const menu = document.getElementById("nav-menu-items");
+			const serach = document.getElementById("nav-menu-serach");
+		
+			menuBtn.onclick = function() {
+				if (menu.style.display == "flex") {
+					menu.style.display = "none";
+					serach.style.display = "none";
+				} else {
+					menu.style.display = "flex";
+					serach.style.display = "flex";
+				}
+			};
+		</script>
 	</body>
 </html>

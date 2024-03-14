@@ -23,15 +23,15 @@
 				<div class="header-container">
 					<address class="header-contact">
 						<span class="h11" title="Call us">
-							<i class="fa-solid fa-mobile-screen-button" style="margin-right: 6px"></i> 
+							<i class="fa-solid fa-mobile-screen-button" style="margin-right: 0.5rem"></i> 
 							Phone: +47 5941 295
 						</span>
 						<span class="h11" title="Send a mail">
-							<i class="fa-regular fa-envelope" style="margin-right: 6px"></i> 
+							<i class="fa-regular fa-envelope" style="margin-right: 0.5rem"></i> 
 							Mail: swipe@mail.com
 						</span>
 						<span class="h11" title="Visit us">
-							<i class="fa-regular fa-map" style="margin-right: 6px"></i> 
+							<i class="fa-regular fa-map" style="margin-right: 0.5rem"></i> 
 							Find us: Road 20, Paris, France
 						</span>
 					</address>
@@ -52,20 +52,27 @@
 				</div>
 			</div>
 			<nav class="nav-container">
-				<a href="./index.html" title="Home">
-					<img src="./src/assets/svg/logo.svg" alt="logo" >
-				</a>
-				<div class="nav-items h9">
+				<div class="nav-logo">
+					<a href="./index.html" title="Home">
+						<img src="./src/assets/svg/logo.svg" alt="logo" >
+					</a>
+					<button class="nav-logo-menu" id="nav-menu-toggle"  title="Open Menu">
+						Menu
+					</button>
+				</div>
+				
+				<div class="nav-items h9" id="nav-menu-items">
 					<div>
-						<a class="nav-link" href="./index.html" title="Home">Home</a>
+						<a class="nav-link" href="./index.html" title="Home" >Home</a>
 					</div>
 					<div>
-						<a class="nav-link" href="./about.html" title="About">About</a>
+						<a class="nav-link" href="./about.html" title="About" >About</a>
 					</div>
 					<div class="dropdown">
-						<a href="./services.html" title="Services" style="border-color: #e22329; color: #e22329" >
-							Services <i class="fa-solid fa-angle-down" style="margin-left: 6px"></i>
+						<a href="./services.html" title="Services" style="border-color: #e22329; color: #e22329">
+							Services <i class="fa-solid fa-angle-down" style="margin-left: 0.5rem"></i>
 						</a>
+						<span></span>
 						<div class="dropdown-content">
 							<a class="dropdown-link" href="./book-a-consulation.html" title="Book a Consultation">
 								Book a Consultation
@@ -83,7 +90,7 @@
 						<a href="./events.html" class="nav-link" title="Events">Events</a>
 					</div>
 				</div>
-				<div class="nav-search">
+				<div class="nav-search" id="nav-menu-serach">
 					<div class="search" title="Search">
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</div>
@@ -98,8 +105,8 @@
 			<section class="service-details">
 				<div class="partial-bg"></div>
 				<div class="service-details-content">
-					<h1 class="h1" style="color: white; margin-bottom: 10px">Family Sponsorship</h1>
-					<p class="h8" style="color: white; font-weight: 400; width: 75%; margin: auto">
+					<h1 class="h1" style="color: white; margin-bottom: 0.625rem">Family Sponsorship</h1>
+					<p class="h8 service-details-content-half" style="color: white; font-weight: 400; ">
 						Understanding the Requirements and Process of Canada's Family Sponsorship Visa Program
 					</p>
 					<span class="breadcrumb">
@@ -107,7 +114,7 @@
 						<a href="./services.html" title="Services">Services</a> <i class="fa-solid fa-angle-right"></i>
 						Service Details
 					</span>
-					<img src="./src/assets/png/img1.png" alt="cover image" style="margin: 80px auto" >
+					<img src="./src/assets/png/img1.png" alt="cover image" style="margin: 5rem auto" >
 
 					<p class="h8" style="text-align: left; font-weight: 400">
 						The Canadian Government prioritizes family unity by offering Family Class Sponsorship
@@ -125,7 +132,7 @@
 						relationships, enriching the fabric of Canadian society and reinforcing its reputation
 						as a welcoming and inclusive nation.
 					</p>
-					<h4 class="h4" style="text-align: left; margin-top: 40px">
+					<h4 class="h4" style="text-align: left; margin-top: 2.5rem">
 						We provide assistance with the following types of Sponsorship Applications:
 					</h4>
 					<ul>
@@ -151,7 +158,7 @@
 							ligula
 						</li>
 					</ul>
-					<h4 class="h4" style="text-align: left; margin-top: 40px">
+					<h4 class="h4" style="text-align: left; margin-top: 2.5rem">
 						Available Sponsorship Class in Canada:
 					</h4>
 					<ul>
@@ -177,7 +184,7 @@
 							ligula
 						</li>
 					</ul>
-					<p class="h8" style="text-align: left; font-weight: 400; margin-top: 40px">
+					<p class="h8" style="text-align: left; font-weight: 400; margin-top: 2.5rem">
 						With our expertise and experience, we carefully assess you and your family member or
 						spouse’s case to determine your eligibility and likelihood of success in the Family
 						Class Sponsorship program. <br ><br >After an initial assessment, we promptly begin
@@ -214,5 +221,20 @@
 		</main>
 
 		<script src="./src/js/service-details.js"></script>
+		<script>
+			const menuBtn = document.getElementById("nav-menu-toggle");
+			const menu = document.getElementById("nav-menu-items");
+			const serach = document.getElementById("nav-menu-serach");
+		
+			menuBtn.onclick = function() {
+				if (menu.style.display == "flex") {
+					menu.style.display = "none";
+					serach.style.display = "none";
+				} else {
+					menu.style.display = "flex";
+					serach.style.display = "flex";
+				}
+			};
+		</script>
 	</body>
 </html>

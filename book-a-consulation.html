@@ -17,11 +17,93 @@
 		<script src="https://kit.fontawesome.com/78f34634fd.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<header>
+			<div class="header">
+				<div class="header-container">
+					<address class="header-contact">
+						<span class="h11" title="Call us">
+							<i class="fa-solid fa-mobile-screen-button" style="margin-right: 0.5rem"></i> 
+							Phone: +47 5941 295
+						</span>
+						<span class="h11" title="Send a mail">
+							<i class="fa-regular fa-envelope" style="margin-right: 0.5rem"></i> 
+							Mail: swipe@mail.com
+						</span>
+						<span class="h11" title="Visit us">
+							<i class="fa-regular fa-map" style="margin-right: 0.5rem"></i> 
+							Find us: Road 20, Paris, France
+						</span>
+					</address>
+					<div class="header-social">
+						<a href="https://twitter.com/?lang=en" title="Go to Twitter" target="_blank">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+						<a href="https://www.facebook.com/" title="Go to Facebook" target="_blank">
+							<i class="fa-brands fa-facebook-f"></i>
+						</a>
+						<a href="https://www.youtube.com/" title="Go to Youtube" target="_blank">
+							<i class="fa-brands fa-youtube" style="color: red"></i>
+						</a>
+						<a href="https://www.instagram.com/" title="Go to Instagram" target="_blank">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<nav class="nav-container">
+				<div class="nav-logo">
+					<a href="./index.html" title="Home">
+						<img src="./src/assets/svg/logo.svg" alt="logo" >
+					</a>
+					<button class="nav-logo-menu" id="nav-menu-toggle"  title="Open Menu">
+						Menu
+					</button>
+				</div>
+				
+				<div class="nav-items h9" id="nav-menu-items">
+					<div>
+						<a class="nav-link" href="./index.html" title="Home" >Home</a>
+					</div>
+					<div>
+						<a class="nav-link" href="./about.html" title="About" >About</a>
+					</div>
+					<div class="dropdown">
+						<a href="./services.html" title="Services" >
+							Services <i class="fa-solid fa-angle-down" style="margin-left: 0.5rem"></i>
+						</a>
+						<div class="dropdown-content">
+							<a class="dropdown-link" href="./book-a-consulation.html" title="Book a Consultation" style="border-color: #e22329; color: #e22329">
+								Book a Consultation
+							</a>
+							<a class="dropdown-link" href="./team-list.html" title="Team List">Team List</a>
+						</div>
+					</div>
+					<div>
+						<a href="./blogs.html" class="nav-link" title="Blogs">Blogs</a>
+					</div>
+					<div>
+						<a href="./contact.html" class="nav-link" title="Contact">Contact</a>
+					</div>
+					<div>
+						<a href="./events.html" class="nav-link" title="Events">Events</a>
+					</div>
+				</div>
+				<div class="nav-search" id="nav-menu-serach">
+					<div class="search" title="Search">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</div>
+					<button class="btn" onclick="document.location='./contact.html'" title="Contact us">
+						Get in Touch
+					</button>
+				</div>
+			</nav>
+		</header>
+		
 		<main>
 			<section class="bac">
 				<div class="partial-bg"></div>
 				<div class="contact-us-top">
-					<h1 class="h1" style="color: white; margin-bottom: 10px">Book a Consultation</h1>
+					<h1 class="h1" style="color: white; margin-bottom: 0.675rem">Book a Consultation</h1>
 					<p class="h8" style="color: white; font-weight: 400; width: 75%; margin: auto">
 						Explore immigration to Canada with a personalized consultation to assess eligibility and
 						admissibility options.
@@ -35,10 +117,10 @@
 					<div class="contact-us-content-form">
 						<div>
 							<p class="h10">BOOK A CONSULTATION</p>
-							<h5 class="h5" style="text-align: left; margin-top: 15px">
+							<h5 class="h5" style="text-align: left; margin-top: 1rem">
 								Immigration Consultation Services
 							</h5>
-							<q class="h9" style="color: #59667d; margin-top: 8px">
+							<q class="h9" style="color: #59667d; margin-top: 0.5rem">
 								We offer immigration consultation and representation services throughout Canada,
 								except for Quebec. If you require assistance with immigration matters specific to
 								Quebec, we kindly ask that you refrain from booking a consultation with us. Our team
@@ -53,7 +135,7 @@
 					</div>
 					<div><img src="./src/assets/png/img1.png" alt="cover image" ></div>
 				</div>
-				<p class="h8" style="max-width: 1200px; margin: auto; font-weight: 400">
+				<p class="h8 bac-p" style="font-weight: 400">
 					At our consultancy, each consultation features a personalized call with Jade Calver or one
 					of our associates, conducted via video or phone. Following this discussion, you will
 					receive a comprehensive summary encompassing our conversation, along with a detailed
@@ -67,7 +149,7 @@
 					<span class="card-icon"><i class="fa-solid fa-envelope"></i></span>
 					<div>
 						<p class="h7" style="color: inherit">Fast onboarding</p>
-						<p class="h10" style="color: inherit; margin-top: 15px">
+						<p class="h10" style="color: inherit; margin-top: 1rem">
 							Seamless initiation into our system for swift financial assistance.
 						</p>
 					</div>
@@ -76,7 +158,7 @@
 					<span class="card-icon"><i class="fa-solid fa-phone-volume"></i></span>
 					<div>
 						<p class="h7" style="color: inherit">Expert support</p>
-						<p class="h10" style="color: inherit; margin-top: 15px">
+						<p class="h10" style="color: inherit; margin-top: 1rem">
 							Guidance from industry professionals tailored to your business needs.
 						</p>
 					</div>
@@ -85,13 +167,13 @@
 					<span class="card-icon"><i class="fa-solid fa-comments"></i></span>
 					<div>
 						<p class="h7" style="color: inherit">Consulting partners</p>
-						<p class="h10" style="color: inherit; margin-top: 15px">
+						<p class="h10" style="color: inherit; margin-top: 1rem">
 							Collaboration with experienced advisors for strategic financial planning.
 						</p>
 					</div>
 				</div>
 			</section>
-			<section class="h8" style="max-width: 1200px; margin: auto; font-weight: 400">
+			<section class="h8 bac-p" style="font-weight: 400">
 				Moreover, all our consultants are Registered Canadian Immigration Consultants, maintaining
 				good standing with the College of Immigration and Citizenship Consultants. This
 				accreditation underscores our commitment to professionalism, ethics, and expertise in
@@ -102,10 +184,10 @@
 				All of our consultants are Registered Canadian Immigration Consultants in good standing with
 				the College of Immigration and Citizenship Consultants.
 			</section>
-			<section style="display: flex; justify-content: space-between; align-items: center; background-color: rgba(255, 58, 58, 0.08); padding: 45px; max-width: 1200px; margin: 80px auto;">
+			<section class="bac-card" >
 				<div>
 					<h4 class="h4" style="color: #e22329">Ready to start your journey?</h4>
-					<p class="h8" style="font-weight: 400; margin-top: 8px">
+					<p class="h8" style="font-weight: 400; margin-top: 0.5rem">
 						Schedule your consultation now and let's make it happen together!
 					</p>
 				</div>
@@ -346,6 +428,21 @@
 		</main>
 		
 		<script src="./src/js/t&c.js"></script>
+		<script>
+			const menuBtn = document.getElementById("nav-menu-toggle");
+			const menu = document.getElementById("nav-menu-items");
+			const serach = document.getElementById("nav-menu-serach");
+		
+			menuBtn.onclick = function() {
+				if (menu.style.display == "flex") {
+					menu.style.display = "none";
+					serach.style.display = "none";
+				} else {
+					menu.style.display = "flex";
+					serach.style.display = "flex";
+				}
+			};
+		</script>
 		<script>
 			var modal = document.getElementById("myModal");
 			var btn1 = document.getElementsByClassName("myModalBtn")[0];

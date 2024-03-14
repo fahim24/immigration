@@ -4,6 +4,10 @@
 		@include container-sm;
 		padding: 100px 0;
 		text-align: center;
+		&-half{
+			width: 75%; 
+			margin: auto;
+		}
 	}
 }
 
@@ -12,20 +16,18 @@
 	margin: 100px auto;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 30px;
+	gap: 2rem;
 	&-card {
 		background-color: $primary-8;
-		padding: 30px;
-		@include flex(column, center, flex-start, 24px);
+		padding: 2rem;
+		@include flex(column, center, flex-start, 1.5rem);
 		img {
 			width: 100%;
 		}
 		&-btn {
-			@include btn-primary;
+			@include btn-primary-ar;
 			background-color: white;
 			color: $primary;
-			padding: 15px 30px;
-			@include flex(row, center, center, 10px);
 			&:hover {
 				opacity: 0.9;
 			}
@@ -38,24 +40,79 @@
 	&-content {
 		@include container-sm;
 		padding-top: 100px;
+		&-time{
+			display: flex; 
+			justify-content: space-between; 
+			align-items: center
+		}
+		.side-share{
+			position: absolute; 
+			display: flex; 
+			flex-direction: column; 
+			gap: 1rem; 
+			left: -50px; 
+			color: #59667d; 
+			align-items: center; 
+			width: fit-content; 
+			height: fit-content; 
+			font-size: 1.375rem;
+		}
 		ul {
-			@include font-styles($gray, 18px, normal, 400, 30px);
+			@include font-styles($gray, 1.125rem, normal, 400, 1.875rem);
 			text-align: left;
-			margin-top: 20px;
-			margin-bottom: 40px;
-			list-style: none;
+			margin-top: 1.25rem;
+			margin-bottom: 2.5rem;
 			li {
-				margin-bottom: 16px;
-				@include flex(row, flex-start, center, 16px);
+				margin-bottom: 1rem;
+				@include flex(row, flex-start, center, 1rem);
 				i {
 					color: $secondary;
-					font-size: 24px;
+					font-size: 1.5rem;
 				}
 			}
 		}
 		&-tags {
-			@include flex(row, space-between, center, 10px);
-			margin: 24px auto;
+			@include flex(row, space-between, center, 1.625rem);
+			margin: 1.5rem auto;
 		}
 	}
 }
+
+
+@media screen and (max-width: 600px){
+	.blogs-top{
+		&-content{
+			padding: 40px 10px;
+			&-half{
+				width: 100%;
+			}
+		}		
+	}
+
+	.blogs{
+		margin: 40px 10px;
+		grid-template-columns: 1fr;
+	}
+
+	.blog-details{
+		&-content{
+			padding: 40px 10px;
+			&-time{
+				flex-direction: column;
+				gap: 40px;
+				align-items: flex-start;
+				span{
+					width: 100%;
+					text-align: center;
+				}
+			}
+			.side-share{
+				position: static;
+				flex-direction: row;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+		

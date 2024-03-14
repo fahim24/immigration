@@ -22,8 +22,7 @@
 		@include flex(row, flex-start, center, 20px);
 	}
 	&-social {
-		@include flex(row, flex-start, center, 20px);
-		font-weight: bold;
+		@include flex(row, flex-start, center, 1.25rem);
 		a {
 			color: white;
 		}
@@ -34,6 +33,17 @@
 	@include container;
 	@include flex(row, space-between, center, 0);
 	padding: 15px 0;
+	.nav-logo{
+		a{
+			width: fit-content;
+			padding: 0;
+		}
+		&-menu{
+			@include btn-primary;
+			display: none;
+		}
+		
+	}
 	.nav-items {
 		@include flex(row, flex-start, center, 10px);
 		.dropdown {
@@ -86,7 +96,6 @@
 	div {
 		height: 100%;
 		a {
-			text-decoration: none;
 			height: 100%;
 			width: 100%;
 			padding: 34px 20px;
@@ -111,7 +120,7 @@
 	@include flex(row, flex-start, center, 20px);
 	.search {
 		color: $gray;
-		font-size: 20px;
+		font-size: 1.25rem;
 		cursor: text;
 	}
 	.btn {
@@ -127,17 +136,15 @@
 	@include container;
 	padding: 30px 0;
 }
+
 .social-links {
-	@include flex(row, flex-start, center, 20px);
+	@include flex(row, flex-start, center, 1.25rem);
 	.social-link {
-		height: 50px;
-		width: 50px;
+		height: 3rem;
+		width: 3rem;
 		@include flex(row, center, center, 0);
 		background-color: $primary-8;
-		text-decoration: none;
-
 		color: $primary;
-		font-weight: bold;
 	}
 }
 
@@ -146,13 +153,11 @@
 	@include flex(row, center, center, 140px);
 	padding: 80px 0;
 	ul {
-		margin-top: 24px;
-		list-style: none;
-		@include flex(column, flex-start, flex-start, 20px);
+		margin-top: 1.5rem;
+		@include flex(column, flex-start, flex-start, 1.25rem);
 		li {
 			text-wrap: nowrap;
 			a {
-				text-decoration: none;
 				color: $light;
 				&:hover {
 					color: $dark;
@@ -163,15 +168,14 @@
 	&-contact {
 		@include flex(row, flex-start, center, 50px);
 		&-card {
-			@include flex(row, flex-start, center, 12px);
+			@include flex(row, flex-start, center, 0.75rem);
 			&-icon {
-				height: 48px;
-				width: 48px;
+				height: 3rem;
+				width: 3rem;
 				@include flex(row, center, center, 0);
 				background-color: $primary-8;
 				color: $primary;
-				font-weight: bold;
-				border-radius: 30px;
+				border-radius: 3rem;
 			}
 		}
 	}
@@ -181,9 +185,10 @@
 	@include flex(row, space-between, center, 0);
 	@include container;
 	padding: 20px 0;
+	&-left{order: 1;}
+	&-right{order: 2;}
 	a {
-		text-decoration: none;
-		margin-left: 25px;
+		
 		&:hover {
 			color: $secondary;
 		}
@@ -194,17 +199,19 @@
 	border-bottom: 1px solid #e3e6ee;
 	width: 100%;
 }
+
 .partial-bg {
 	background-color: $primary;
 	position: absolute;
-	height: 600px;
+	height: 37.5rem;
 	width: 100%;
 	z-index: -1;
 }
+
 .breadcrumb {
-	@include font-styles(white, 16px, normal, 400, 24px);
-	@include flex(row, center, center, 12px);
-	margin-top: 20px;
+	@include font-styles(white, 1rem, normal, 400, 1.5rem);
+	@include flex(row, center, center, 0.75rem);
+	margin-top: 1.25rem;
 	a {
 		text-decoration: none;
 		color: inherit;
@@ -341,48 +348,124 @@
 		margin-left: auto;
 		@include flex(row, center, center, 16px);
 		.close {
-			@include btn-primary;
+			@include btn-primary-ar;
 			margin-top: 20px;
-			padding: 15px 30px;
 			color: $gray;
 			background-color: $primary-8;
-			@include flex(row, center, center, 10px);
 			&:hover {
 				opacity: 0.9;
 			}
 		}
 	}
 }
+
 .h1 {
-	@include font-styles($primary, 64px, normal, 700, 84px);
+	@include font-styles($primary, 4rem, normal, 700, 5.25rem);
 }
 .h3 {
-	@include font-styles(white, 48px, normal, 600, 68px);
+	@include font-styles(white, 3rem, normal, 600,4.25rem);
 }
 .h4 {
-	@include font-styles($primary, 38px, normal, 600, 52px);
+	@include font-styles($primary, 2.375rem, normal, 600, 3.25rem);
 }
 .h5 {
-	@include font-styles($primary, 32px, normal, 600, 44px);
+	@include font-styles($primary, 2rem, normal, 600, 2.75rem);
 	text-align: center;
 }
 .h6 {
-	@include font-styles($primary, 26px, normal, 600, 36px);
+	@include font-styles($primary, 1.625rem, normal, 600, 2.25rem);
 	text-align: center;
 }
 .h7 {
-	@include font-styles(white, 22px, normal, 600, 30px);
+	@include font-styles(white, 1.375rem, normal, 600, 1.875rem);
 }
 .h8 {
-	@include font-styles($gray, 18px, normal, 600, 28px);
+	@include font-styles($gray, 1.125rem, normal, 600, 1.75rem);
 }
 .h9 {
-	@include font-styles($primary, 16px, normal, 400, 24px);
+	@include font-styles($primary, 1rem, normal, 400, 1.5rem);
 }
 .h10 {
-	@include font-styles($secondary, 14px, normal, 400, 20px);
+	@include font-styles($secondary, 0.875rem, normal, 400, 1.25rem);
+}
+.h11 {
+	@include font-styles(white, 0.75rem, normal, 400, 1.125rem);
 }
 
-.h11 {
-	@include font-styles(white, 12px, normal, 400, 18px);
+@media screen and (max-width: 600px){
+	:root{
+		font-size: 12px;
+	}
+	.header{
+		&-container{
+			padding: 5px 10px;
+		}
+		&-contact {
+			@include flex(column, center, flex-start, 5px);
+		}
+		
+	}
+	.nav-container{
+		@include flex(column, center, center, 20px);
+		padding: 10px; 
+		.nav-logo{
+			width: 100%;
+			@include flex(row, space-between, center, 0px);
+			&-menu{
+				display: block;
+				&:hover {
+					opacity: 0.9;
+				}
+			}
+		}
+		.nav-items {
+			display: none;
+			flex-direction: column;
+			justify-content: center;
+			.dropdown{
+				&-content {
+					margin-top: 5px;
+				}
+				a{
+					padding: 5px;
+				}
+			}
+			div{
+				a{
+					padding: 5px;
+				}
+			}
+		}
+	}
+	.nav-search {
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		gap:10px;
+	}
+	.footer-header{
+		padding: 20px 10px;
+	}	
+	.footer-links{
+		flex-direction: column;
+		gap: 40px;
+		padding: 40px 10px;
+		text-align: center;
+		ul{
+			justify-content: center;
+			align-items: center;
+			
+		}
+		&-contact{
+			flex-direction: column;
+			gap:20px;
+		}
+	}
+	.footer-copyright{
+		flex-direction: column;
+		justify-content: center;
+		gap:20px;
+		&-left{order:2;}
+		&-right{order:1;}
+	}
 }
