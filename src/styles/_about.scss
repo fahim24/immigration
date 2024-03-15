@@ -68,7 +68,7 @@
 			grid-template-columns: repeat(3, 1fr);
 			gap: 2rem;
 			&-card {
-				@include flex(row, center, flex-start, 1rem);
+				@include flex(row, flex-start, flex-start, 1rem);
 				background-color: rgba(255, 255, 255, 0.06);
 				padding: 2.75rem;
 				color: white;
@@ -195,6 +195,59 @@
 		}
 		&-content {
 			grid-template-columns: 1fr;
+		}
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px){
+	.about-us{
+		&-content{
+			padding: 60px 10px;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.missions{
+		&-container{
+			grid-template-columns: 1fr;
+			gap: 60px;
+			padding: 20px 10px;
+			.missions-img{
+				margin: auto;
+			}
+		}
+		&-stats {
+			margin: 60px 10px;
+			padding: 40px 10px;
+			.stats {
+				flex-wrap: wrap;
+				gap: 40px;
+			}
+		}
+	}
+	.why-us {
+		&-container{
+			padding: 60px 10px;
+			&-header{
+				grid-template-columns: 1fr;
+				gap: 60px;
+			}
+			&-content{
+				grid-template-columns: 1fr;
+				
+			}
+		}
+	}
+	.our-team{
+		margin: 60px 10px 0;
+		&-header {
+			&-half{
+				width: 100%;
+			}			
+		}
+		&-content {
+			grid-template-columns: 1fr 1fr;
 		}
 	}
 }

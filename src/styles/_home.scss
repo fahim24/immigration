@@ -17,6 +17,7 @@
 		left: 50%;
 		right: 0;
 		height: 715px;
+		z-index: -2;
 
 		img {
 			width: 100%;
@@ -246,7 +247,7 @@
 	&-container {
 		@include container;
 		display: grid;
-		grid-template-columns: auto 700px;
+		grid-template-columns: auto 600px;
 		gap: 5rem;
 		padding: 80px 0;
 		&-content {
@@ -321,8 +322,6 @@
 		}
 		.services-container{
 			grid-template-columns: 1fr;
-			
-			
 		}
 	}
 	.about-section{
@@ -395,6 +394,81 @@
 		&-container{
 			grid-template-columns: 1fr;
 			padding: 40px 10px;
+		
+		}
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px){
+	.hero-section{
+		&-content{
+			padding: 60px 10px;
+		}
+	}
+	.service-section{
+		&-container {
+			padding: 60px 10px;
+		}
+		.services-container{
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	.about-section{
+		margin: 60px 0;
+		&-container{
+			grid-template-columns: 1fr;
+			padding: 60px 10px;
+			gap: 60px;
+			.about-section-img{
+				margin: auto;			
+				
+			}
+		}
+		&-stats {
+			margin: 60px 10px;
+			padding: 60px ;
+			.stats {
+				flex-wrap: wrap;
+			}
+		}
+	}
+	.process-section {
+		margin: 60px 0;
+		padding: 60px 10px;
+		&-content{
+			&-header{
+				grid-template-columns: 1fr 1fr;
+			}
+			&-content{
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+	.testimonials{
+		margin: 60px 10px;
+		padding: 30px;
+		&-container {
+			&-header{
+				grid-template-columns: 1fr;
+			}
+			&-content{
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+	}
+	.blogs-section{
+		margin: 60px 10px;
+		&-header{
+			grid-template-columns: 1fr;
+		}
+		&-content {
+			grid-template-columns: 1fr;
+		}
+	}
+	.contacts{
+		&-container{
+			grid-template-columns: 1fr;
+			padding: 60px 10px;
 		
 		}
 	}

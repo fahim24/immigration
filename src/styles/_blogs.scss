@@ -115,4 +115,30 @@
 	}
 }
 
-		
+@media screen and (min-width: 601px) and (max-width: 900px){
+	.blogs-top{
+		&-content{
+			padding: 60px 10px;
+			&-half{
+				width: 100%;
+			}
+		}		
+	}
+
+	.blogs{
+		margin: 60px 10px;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.blog-details{
+		&-content{
+			padding: 60px 10px;
+			
+			.side-share{
+				position: static;
+				flex-direction: row;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}		

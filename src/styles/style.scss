@@ -39,7 +39,7 @@
 			padding: 0;
 		}
 		&-menu{
-			@include btn-primary;
+			@include btn-primary-ar;
 			display: none;
 		}
 		
@@ -150,9 +150,11 @@
 
 .footer-links {
 	@include container;
-	@include flex(row, center, center, 140px);
-	padding: 80px 0;
-	ul {
+	@include flex(row, space-between, center, 7.5rem);
+	padding: 5rem 0;
+	&-menus{
+		@include flex(row, center, center, 6.125rem);
+		ul {
 		margin-top: 1.5rem;
 		@include flex(column, flex-start, flex-start, 1.25rem);
 		li {
@@ -165,8 +167,11 @@
 			}
 		}
 	}
-	&-contact {
-		@include flex(row, flex-start, center, 50px);
+	}
+	
+	&-contact{
+		&-info {
+		@include flex(row, flex-start, center, 3rem);
 		&-card {
 			@include flex(row, flex-start, center, 0.75rem);
 			&-icon {
@@ -177,6 +182,7 @@
 				color: $primary;
 				border-radius: 3rem;
 			}
+		}
 		}
 	}
 }
@@ -225,7 +231,7 @@
 	display: none;
 	position: fixed;
 	z-index: 10;
-	padding-top: 100px;
+	padding-top: 6.25rem;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -237,12 +243,17 @@
 	&-content {
 		background-color: white;
 		margin: auto;
-		padding: 40px;
+		padding: 2.5rem;
 		width: 70%;
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
+		gap: 1.25rem;
 		position: relative;
+		&-half{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 2rem;
+		}
 		input,
 		textarea {
 			border: 1px solid $primary-8;
@@ -251,12 +262,12 @@
 		.time-pick {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			gap: 12px;
+			gap: 0.75rem;
 			.input-container {
 				position: relative;
 				display: inline-block;
 				width: auto;
-				height: 50px;
+				height: 3rem;
 			}
 
 			input[type="radio"] {
@@ -278,7 +289,7 @@
 				color: $primary;
 				text-align: center;
 				background-color: white;
-				line-height: 50px;
+				line-height: 3rem;
 				border-radius: 4px;
 				border: 1px solid $primary-8;
 			}
@@ -294,9 +305,9 @@
 		.package-pick {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-			gap: 24px;
+			gap: 1.5rem;
 			.package-card {
-				padding: 30px;
+				padding: 2rem;
 				text-align: center;
 				border: 1px solid $primary-8;
 				border-radius: 4px;
@@ -305,8 +316,8 @@
 				position: relative;
 				display: inline-block;
 
-				height: 50px;
-				width: 160px;
+				height: 3rem;
+				width: 10rem;
 			}
 
 			input[type="radio"] {
@@ -329,7 +340,7 @@
 				text-align: center;
 				text-wrap: nowrap;
 				background-color: white;
-				line-height: 50px;
+				line-height: 3rem;
 				border-radius: 4px;
 				border: 1px solid $secondary;
 			}
@@ -346,10 +357,10 @@
 	.modal-btns {
 		width: fit-content;
 		margin-left: auto;
-		@include flex(row, center, center, 16px);
+		@include flex(row, center, center, 1rem);
 		.close {
 			@include btn-primary-ar;
-			margin-top: 20px;
+			margin-top: 1.25rem;
 			color: $gray;
 			background-color: $primary-8;
 			&:hover {
@@ -402,8 +413,97 @@
 		}
 		&-contact {
 			@include flex(column, center, flex-start, 5px);
+		}		
+	}	
+	.nav-container{
+		@include flex(column, center, center, 20px);
+		padding: 10px; 
+		.nav-logo{
+			width: 100%;
+			@include flex(row, space-between, center, 0px);
+			&-menu{
+				display: block;
+				&:hover {
+					opacity: 0.9;
+				}
+			}
 		}
-		
+		.nav-items {
+			display: none;
+			flex-direction: column;
+			justify-content: center;
+			.dropdown{
+				&-content {
+					margin-top: 5px;
+				}
+				a{
+					padding: 5px;
+				}
+			}
+			div{
+				a{
+					padding: 5px;
+				}
+			}
+		}
+	}
+	.nav-search {
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		gap:10px;
+	}
+	.footer-header{
+		padding: 10px;
+	}
+	.footer-links{
+		flex-direction: column;
+		gap: 40px;
+		padding: 40px 10px;
+		text-align: center;
+		&-menus{
+			flex-direction: column;
+			gap: 40px;	
+			ul{
+				justify-content: center;
+				align-items: center;				
+			}		
+		}
+		&-contact{
+			&-info{
+				justify-content: center;
+			}
+		}			
+	}
+	.footer-copyright{
+		flex-direction: column;
+		justify-content: center;
+		gap:20px;
+		&-left{order:2;}
+		&-right{order:1;}
+	}
+	.modal{
+		&-content{
+			width: 90%;	
+			&-half{
+				grid-template-columns: 1fr;
+			}		
+			.package-pick{
+				grid-template-columns:  1fr;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px){
+	:root{
+		font-size: 14px;
+	}
+	.header{
+		&-container{
+			padding: 10px;
+		}
+			
 	}
 	.nav-container{
 		@include flex(column, center, center, 20px);
@@ -445,27 +545,30 @@
 	}
 	.footer-header{
 		padding: 20px 10px;
-	}	
+	}
 	.footer-links{
 		flex-direction: column;
-		gap: 40px;
-		padding: 40px 10px;
+		gap: 60px;
+		padding: 60px 10px;
 		text-align: center;
-		ul{
-			justify-content: center;
-			align-items: center;
-			
+		&-menus{
+			ul{
+				justify-content: center;
+				align-items: center;				
+			}
 		}
 		&-contact{
-			flex-direction: column;
-			gap:20px;
+			&-info{
+				justify-content: center;
+			}
 		}
 	}
 	.footer-copyright{
-		flex-direction: column;
-		justify-content: center;
-		gap:20px;
-		&-left{order:2;}
-		&-right{order:1;}
+		padding: 10px;
+	}
+	.modal{
+		&-content{
+			width: 80%;
+		}
 	}
 }

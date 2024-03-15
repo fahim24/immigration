@@ -138,5 +138,37 @@
 			}
 		}
 	}
+}
 
+@media screen and (min-width: 601px) and (max-width: 900px) {
+	.services-top {
+		&-content {
+			padding: 60px 10px;
+			&-half{
+				width: 100%;
+			}
+		}
+	}	
+	.services{
+		margin: 60px 10px;
+	}
+	.service-details{
+		&-content{
+			padding: 60px 10px 0;
+			&-half{
+				width: 100%; 
+			}
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.team-details-content{
+		margin: 60px 10px;
+		&-img {
+			img{
+				width: 200px;
+			}
+		}
+	}
 }

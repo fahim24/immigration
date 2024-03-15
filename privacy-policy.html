@@ -18,11 +18,93 @@
 		<script src="https://kit.fontawesome.com/78f34634fd.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<header>
+			<div class="header">
+				<div class="header-container">
+					<address class="header-contact">
+						<span class="h11" title="Call us">
+							<i class="fa-solid fa-mobile-screen-button" style="margin-right: 0.5rem"></i> 
+							Phone: +47 5941 295
+						</span>
+						<span class="h11" title="Send a mail">
+							<i class="fa-regular fa-envelope" style="margin-right: 0.5rem"></i> 
+							Mail: swipe@mail.com
+						</span>
+						<span class="h11" title="Visit us">
+							<i class="fa-regular fa-map" style="margin-right: 0.5rem"></i> 
+							Find us: Road 20, Paris, France
+						</span>
+					</address>
+					<div class="header-social">
+						<a href="https://twitter.com/?lang=en" title="Go to Twitter" target="_blank">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+						<a href="https://www.facebook.com/" title="Go to Facebook" target="_blank">
+							<i class="fa-brands fa-facebook-f"></i>
+						</a>
+						<a href="https://www.youtube.com/" title="Go to Youtube" target="_blank">
+							<i class="fa-brands fa-youtube" style="color: red"></i>
+						</a>
+						<a href="https://www.instagram.com/" title="Go to Instagram" target="_blank">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<nav class="nav-container">
+				<div class="nav-logo">
+					<a href="./index.html" title="Home">
+						<img src="./src/assets/svg/logo.svg" alt="logo" >
+					</a>
+					<button class="nav-logo-menu" id="nav-menu-toggle"  title="Open Menu">
+						Menu
+					</button>
+				</div>
+				
+				<div class="nav-items h9" id="nav-menu-items">
+					<div>
+						<a class="nav-link" href="./index.html" title="Home" >Home</a>
+					</div>
+					<div>
+						<a class="nav-link" href="./about.html" title="About" >About</a>
+					</div>
+					<div class="dropdown">
+						<a href="./services.html" title="Services" >
+							Services <i class="fa-solid fa-angle-down" style="margin-left: 0.5rem"></i>
+						</a>
+						<div class="dropdown-content">
+							<a class="dropdown-link" href="./book-a-consulation.html" title="Book a Consultation">
+								Book a Consultation
+							</a>
+							<a class="dropdown-link" href="./team-list.html" title="Team List">Team List</a>
+						</div>
+					</div>
+					<div>
+						<a href="./blogs.html" class="nav-link" title="Blogs">Blogs</a>
+					</div>
+					<div>
+						<a href="./contact.html" class="nav-link" title="Contact">Contact</a>
+					</div>
+					<div>
+						<a href="./events.html" class="nav-link" title="Events">Events</a>
+					</div>
+				</div>
+				<div class="nav-search" id="nav-menu-serach">
+					<div class="search" title="Search">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</div>
+					<button class="btn" onclick="document.location='./contact.html'" title="Contact us">
+						Get in Touch
+					</button>
+				</div>
+			</nav>
+		</header>
+
 		<main>
 			<div class="tc-top">
 				<div class="tc-top-content">
 					<h1 class="h1">Privacy policy</h1>
-					<p class="h8" style="color: #023a51; margin: 10px 0">
+					<p class="h8" style="color: #023a51; margin: 0.625rem 0">
 						Last modified: <span style="font-weight: 400">January 15, 2024</span>
 					</p>
 					<span class="breadcrumb" style="color: #023a51; justify-content: flex-start">
@@ -44,14 +126,14 @@
 				<div class="tc-content-body">
 					<div id="pp-information">
 						<h4 class="h4">Information</h4>
-						<p class="h8" style="font-weight: 400; margin-top: 20px">
+						<p class="h8" style="font-weight: 400; margin-top: 1.25rem">
 							While using our Site, we may ask you to provide us with certain personally
 							identifiable information that can be used to contact or identify you. Personally
 							identifiable information may include, but is not limited to your name (“Personal
 							Information”).
 						</p>
-						<h6 class="h6" style="margin-top: 40px; text-align: left">Information we collect</h6>
-						<p class="h8" style="font-weight: 400; margin-top: 20px">
+						<h6 class="h6" style="margin-top: 2.5rem; text-align: left">Information we collect</h6>
+						<p class="h8" style="font-weight: 400; margin-top: 1.25rem">
 							We may collect various types of information from and about users of our Services,
 							including: <br ><br >
 							<span style="color: #023a51; font-weight: 600">1. Personal Information:</span> We may
@@ -65,7 +147,7 @@
 					</div>
 					<div id="pp-log_data">
 						<h4 class="h4">Log data</h4>
-						<p class="h8" style="font-weight: 400; margin-top: 20px">
+						<p class="h8" style="font-weight: 400; margin-top: 1.25rem">
 							In addition to the information mentioned above, we collect log data when you interact
 							with our Services. This log data includes your computer’s IP address, browser type,
 							browser version, the pages of our Services that you visit, the time and date of your
@@ -76,7 +158,7 @@
 					</div>
 					<div id="pp-cookies">
 						<h4 class="h4">Cookies</h4>
-						<p class="h8" style="font-weight: 400; margin-top: 20px">
+						<p class="h8" style="font-weight: 400; margin-top: 1.25rem">
 							Cookies are files with small amount of data, which may include an anonymous unique
 							identifier. Cookies are sent to your browser from a web site and stored on your
 							computer's hard drive. <br ><br >
@@ -89,7 +171,7 @@
 					</div>
 					<div id="pp-security">
 						<h4 class="h4">Security</h4>
-						<p class="h8" style="font-weight: 400; margin-top: 20px">
+						<p class="h8" style="font-weight: 400; margin-top: 1.25rem">
 							The security of your Personal Information is important to us, but remember that no
 							method of transmission over the Internet, or method of electronic storage, is 100%
 							secure. While we strive to use commercially acceptable means to protect your Personal
@@ -102,7 +184,7 @@
 					</div>
 					<div id="pp-external_links">
 						<h4 class="h4">External links</h4>
-						<p class="h8" style="font-weight: 400; margin-top: 20px">
+						<p class="h8" style="font-weight: 400; margin-top: 1.25rem">
 							Our Site may contain links to external sites that are not operated by us. Please be
 							aware that we have no control over the content and practices of these sites and cannot
 							accept responsibility or liability for their respective privacy policies. We encourage
@@ -112,7 +194,7 @@
 					</div>
 					<div id="pp-changes">
 						<h4 class="h4">Changes</h4>
-						<p class="h8" style="font-weight: 400; margin-top: 20px">
+						<p class="h8" style="font-weight: 400; margin-top: 1.25rem">
 							This Privacy Policy will remain in effect except with respect to any changes in its
 							provisions in the future, which will be in effect immediately after being posted on
 							this page. <br ><br >
@@ -126,7 +208,7 @@
 					</div>
 					<div id="pp-contact_us">
 						<h4 class="h4">Contact us</h4>
-						<p class="h8" style="font-weight: 400; margin-top: 20px">
+						<p class="h8" style="font-weight: 400; margin-top: 1.25rem">
 							If you have any questions about this Privacy Policy, please contact us.
 						</p>
 					</div>
@@ -134,5 +216,20 @@
 			</div>
 		</main>
 		<script src="./src/js/t&c.js"></script>
+		<script>
+			const menuBtn = document.getElementById("nav-menu-toggle");
+			const menu = document.getElementById("nav-menu-items");
+			const serach = document.getElementById("nav-menu-serach");
+		
+			menuBtn.onclick = function() {
+				if (menu.style.display == "flex") {
+					menu.style.display = "none";
+					serach.style.display = "none";
+				} else {
+					menu.style.display = "flex";
+					serach.style.display = "flex";
+				}
+			};
+		</script>
 	</body>
 </html>

@@ -57,7 +57,7 @@
 		grid-template-columns: repeat(3, 1fr);
 		gap: 2rem;
 		&-card {
-			@include flex(row, center, flex-start, 1rem);
+			@include flex(row, flex-start, flex-start, 1rem);
 			background-color: $primary-8;
 			padding: 2.75rem;
 			color: $primary;
@@ -142,6 +142,46 @@
 			&-card{
 				width: 100%;
 				padding: 10px;
+				&-content{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px){
+	.contact-us{
+		&-top{
+			padding: 60px 10px;
+			&-half{
+				width: 100%;
+			}
+		}
+		&-content{
+			margin: 0 10px 60px;
+			grid-template-columns: 1fr;
+			&-form{
+				order:2;
+				padding: 30px;
+			}
+			img{
+				order:1;
+			}
+		}
+		&-cards{
+			margin: 60px 10px;
+			grid-template-columns: 1fr;
+		}
+	}
+	.map{
+		grid-template-columns: 1fr;
+		&-info {
+			grid-column: auto;
+			grid-row: auto; 
+			&-card{
+				width: 100%;
+				padding: 20px;
 				&-content{
 					width: 100%;
 				}
