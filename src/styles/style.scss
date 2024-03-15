@@ -84,7 +84,7 @@
 					padding: 10px 15px;
 					text-decoration: none;
 					display: block;
-					text-wrap: nowrap;
+					white-space: nowrap;
 				}
 				.dropdown-link:hover {
 					color: $secondary;
@@ -158,7 +158,7 @@
 		margin-top: 1.5rem;
 		@include flex(column, flex-start, flex-start, 1.25rem);
 		li {
-			text-wrap: nowrap;
+			white-space: nowrap;
 			a {
 				color: $light;
 				&:hover {
@@ -338,7 +338,7 @@
 				right: 0;
 				color: $secondary;
 				text-align: center;
-				text-wrap: nowrap;
+				white-space: nowrap;
 				background-color: white;
 				line-height: 3rem;
 				border-radius: 4px;
