@@ -26,6 +26,9 @@
 		a {
 			color: white;
 		}
+		a:hover {
+			color: $secondary;
+		}
 	}
 }
 
@@ -33,16 +36,15 @@
 	@include container;
 	@include flex(row, space-between, center, 0);
 	padding: 15px 0;
-	.nav-logo{
-		a{
+	.nav-logo {
+		a {
 			width: fit-content;
 			padding: 0;
 		}
-		&-menu{
+		&-menu {
 			@include btn-primary-ar;
 			display: none;
 		}
-		
 	}
 	.nav-items {
 		@include flex(row, flex-start, center, 10px);
@@ -152,37 +154,37 @@
 	@include container;
 	@include flex(row, space-between, center, 7.5rem);
 	padding: 5rem 0;
-	&-menus{
+	&-menus {
 		@include flex(row, center, center, 6.125rem);
 		ul {
-		margin-top: 1.5rem;
-		@include flex(column, flex-start, flex-start, 1.25rem);
-		li {
-			white-space: nowrap;
-			a {
-				color: $light;
-				&:hover {
-					color: $dark;
+			margin-top: 1.5rem;
+			@include flex(column, flex-start, flex-start, 1.25rem);
+			li {
+				white-space: nowrap;
+				a {
+					color: $light;
+					&:hover {
+						color: $dark;
+					}
 				}
 			}
 		}
 	}
-	}
-	
-	&-contact{
+
+	&-contact {
 		&-info {
-		@include flex(row, flex-start, center, 3rem);
-		&-card {
-			@include flex(row, flex-start, center, 0.75rem);
-			&-icon {
-				height: 3rem;
-				width: 3rem;
-				@include flex(row, center, center, 0);
-				background-color: $primary-8;
-				color: $primary;
-				border-radius: 3rem;
+			@include flex(row, flex-start, center, 3rem);
+			&-card {
+				@include flex(row, flex-start, center, 0.75rem);
+				&-icon {
+					height: 3rem;
+					width: 3rem;
+					@include flex(row, center, center, 0);
+					background-color: $primary-8;
+					color: $primary;
+					border-radius: 3rem;
+				}
 			}
-		}
 		}
 	}
 }
@@ -191,10 +193,13 @@
 	@include flex(row, space-between, center, 0);
 	@include container;
 	padding: 20px 0;
-	&-left{order: 1;}
-	&-right{order: 2;}
+	&-left {
+		order: 1;
+	}
+	&-right {
+		order: 2;
+	}
 	a {
-		
 		&:hover {
 			color: $secondary;
 		}
@@ -249,7 +254,7 @@
 		flex-direction: column;
 		gap: 1.25rem;
 		position: relative;
-		&-half{
+		&-half {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			gap: 2rem;
@@ -374,7 +379,7 @@
 	@include font-styles($primary, 4rem, normal, 700, 5.25rem);
 }
 .h3 {
-	@include font-styles(white, 3rem, normal, 600,4.25rem);
+	@include font-styles(white, 3rem, normal, 600, 4.25rem);
 }
 .h4 {
 	@include font-styles($primary, 2.375rem, normal, 600, 3.25rem);
@@ -403,25 +408,25 @@
 	@include font-styles(white, 0.75rem, normal, 400, 1.125rem);
 }
 
-@media screen and (max-width: 600px){
-	:root{
-		font-size: 12px;
+@media screen and (max-width: 600px) {
+	:root {
+		font-size: 10px;
 	}
-	.header{
-		&-container{
+	.header {
+		&-container {
 			padding: 5px 10px;
 		}
 		&-contact {
 			@include flex(column, center, flex-start, 5px);
-		}		
-	}	
-	.nav-container{
+		}
+	}
+	.nav-container {
 		@include flex(column, center, center, 20px);
-		padding: 10px; 
-		.nav-logo{
+		padding: 10px;
+		.nav-logo {
 			width: 100%;
 			@include flex(row, space-between, center, 0px);
-			&-menu{
+			&-menu {
 				display: block;
 				&:hover {
 					opacity: 0.9;
@@ -432,16 +437,16 @@
 			display: none;
 			flex-direction: column;
 			justify-content: center;
-			.dropdown{
+			.dropdown {
 				&-content {
 					margin-top: 5px;
 				}
-				a{
+				a {
 					padding: 5px;
 				}
 			}
-			div{
-				a{
+			div {
+				a {
 					padding: 5px;
 				}
 			}
@@ -451,67 +456,70 @@
 		display: none;
 		flex-direction: column;
 		justify-content: center;
-		gap:10px;
+		gap: 10px;
 	}
-	.footer-header{
+	.footer-header {
 		padding: 10px;
 	}
-	.footer-links{
+	.footer-links {
 		flex-direction: column;
 		gap: 40px;
 		padding: 40px 10px;
 		text-align: center;
-		&-menus{
+		&-menus {
 			flex-direction: column;
-			gap: 40px;	
-			ul{
+			gap: 40px;
+			ul {
 				justify-content: center;
-				align-items: center;				
-			}		
+				align-items: center;
+			}
 		}
-		&-contact{
-			&-info{
+		&-contact {
+			&-info {
 				justify-content: center;
 			}
-		}			
+		}
 	}
-	.footer-copyright{
+	.footer-copyright {
 		flex-direction: column;
 		justify-content: center;
-		gap:20px;
-		&-left{order:2;}
-		&-right{order:1;}
+		gap: 20px;
+		&-left {
+			order: 2;
+		}
+		&-right {
+			order: 1;
+		}
 	}
-	.modal{
-		&-content{
-			width: 90%;	
-			&-half{
+	.modal {
+		&-content {
+			width: 90%;
+			&-half {
 				grid-template-columns: 1fr;
-			}		
-			.package-pick{
-				grid-template-columns:  1fr;
+			}
+			.package-pick {
+				grid-template-columns: 1fr;
 			}
 		}
 	}
 }
 
-@media screen and (min-width: 601px) and (max-width: 900px){
-	:root{
+@media screen and (min-width: 601px) and (max-width: 900px) {
+	:root {
 		font-size: 14px;
 	}
-	.header{
-		&-container{
+	.header {
+		&-container {
 			padding: 10px;
 		}
-			
 	}
-	.nav-container{
+	.nav-container {
 		@include flex(column, center, center, 20px);
-		padding: 10px; 
-		.nav-logo{
+		padding: 10px;
+		.nav-logo {
 			width: 100%;
 			@include flex(row, space-between, center, 0px);
-			&-menu{
+			&-menu {
 				display: block;
 				&:hover {
 					opacity: 0.9;
@@ -522,16 +530,16 @@
 			display: none;
 			flex-direction: column;
 			justify-content: center;
-			.dropdown{
+			.dropdown {
 				&-content {
 					margin-top: 5px;
 				}
-				a{
+				a {
 					padding: 5px;
 				}
 			}
-			div{
-				a{
+			div {
+				a {
 					padding: 5px;
 				}
 			}
@@ -541,33 +549,33 @@
 		display: none;
 		flex-direction: column;
 		justify-content: center;
-		gap:10px;
+		gap: 10px;
 	}
-	.footer-header{
+	.footer-header {
 		padding: 20px 10px;
 	}
-	.footer-links{
+	.footer-links {
 		flex-direction: column;
 		gap: 60px;
 		padding: 60px 10px;
 		text-align: center;
-		&-menus{
-			ul{
+		&-menus {
+			ul {
 				justify-content: center;
-				align-items: center;				
+				align-items: center;
 			}
 		}
-		&-contact{
-			&-info{
+		&-contact {
+			&-info {
 				justify-content: center;
 			}
 		}
 	}
-	.footer-copyright{
+	.footer-copyright {
 		padding: 10px;
 	}
-	.modal{
-		&-content{
+	.modal {
+		&-content {
 			width: 80%;
 		}
 	}
